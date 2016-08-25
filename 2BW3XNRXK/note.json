@@ -1,0 +1,140 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(\"%html \u003ch1\u003ePivotal Big Data Suite\u003c/h1\u003e\")\nprint(\"\u003chr\u003e\")\nprint(\"At Pivotal, our mission is to transform how people build software. Central to that is being great at working with data. Whether managing data, analyzing it or connecting it with applications, the Big Data Suite contains tools that can help you accelerate your digital transformation.\")\nprint(\"\u003chr\u003e\")\nprint(\"\u003ctable border\u003d\u00271\u0027style\u003d‘width:100%’\u003e\u003ctr\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-gemfire.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003e\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-greenplum.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-hdb.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccenter\u003ePivotal GemFire\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003ePivotal Greenplum\u003c/td\u003e\u003ctd style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003ePivotal HDB\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\u0027padding:5px 10px 5px 5px\u0027  \u003e\u003ccenter\u003e  In-Memory Data Grid powered by Apache Geode  \u003c/td\u003e\u003ctd  style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003e  The Open Source Massively Parallel Data Warehouse  \u003c/td\u003e\u003ctd  style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003e  Hadoop Native SQL Database powered by Apache HAWQ  \u003c/td\u003e\u003c/tr\u003e    \u003c/table\u003e\")",
+      "dateUpdated": "Aug 25, 2016 1:07:55 AM",
+      "config": {
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "colWidth": 12.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472087275278_-1303180871",
+      "id": "20160818-193009_541162383",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch1\u003ePivotal Big Data Suite\u003c/h1\u003e\u003chr\u003eAt Pivotal, our mission is to transform how people build software. Central to that is being great at working with data. Whether managing data, analyzing it or connecting it with applications, the Big Data Suite contains tools that can help you accelerate your digital transformation.\u003chr\u003e\u003ctable border\u003d\u00271\u0027style\u003d‘width:100%’\u003e\u003ctr\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-gemfire.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003e\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-greenplum.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-hdb.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccenter\u003ePivotal GemFire\u003c/td\u003e\u003ctd\u003e\u003ccenter\u003ePivotal Greenplum\u003c/td\u003e\u003ctd style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003ePivotal HDB\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\u0027padding:5px 10px 5px 5px\u0027  \u003e\u003ccenter\u003e  In-Memory Data Grid powered by Apache Geode  \u003c/td\u003e\u003ctd  style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003e  The Open Source Massively Parallel Data Warehouse  \u003c/td\u003e\u003ctd  style\u003d\u0027padding:5px 10px 5px 5px\u0027 \u003e\u003ccenter\u003e  Hadoop Native SQL Database powered by Apache HAWQ  \u003c/td\u003e\u003c/tr\u003e    \u003c/table\u003e"
+      },
+      "dateCreated": "Aug 25, 2016 1:07:55 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ccenter\u003e\u003ch2\u003eApache MADlib\u003c/h2\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003d\u0027https://cwiki.apache.org/confluence/download/attachments/61319606/Mad_400X400.png\u0027 style\u003d\u0027width: 200px;\u0027/\u003e\")",
+      "dateUpdated": "Aug 25, 2016 1:07:55 AM",
+      "config": {
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "colWidth": 12.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472087275278_-1303180871",
+      "id": "20160818-193015_1709519206",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ccenter\u003e\u003ch2\u003eApache MADlib\u003c/h2\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://cwiki.apache.org/confluence/download/attachments/61319606/Mad_400X400.png\u0027 style\u003d\u0027width: 200px;\u0027/\u003e"
+      },
+      "dateCreated": "Aug 25, 2016 1:07:55 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ccenter\u003e\u003ch2\u003ePivotal Gemfire - powered by Apache Geode(incubating)\u003c/h2\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-gemfire.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003e\")",
+      "dateUpdated": "Aug 25, 2016 1:07:55 AM",
+      "config": {
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorHide": true,
+        "colWidth": 12.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472087275278_-1303180871",
+      "id": "20160818-193942_968553802",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ccenter\u003e\u003ch2\u003ePivotal Gemfire - powered by Apache Geode(incubating)\u003c/h2\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://d1fto35gcfffzn.cloudfront.net/images/products/icons/product-pivotal-gemfire.svg\u0027 style\u003d\u0027width: 200px;\u0027/\u003e"
+      },
+      "dateCreated": "Aug 25, 2016 1:07:55 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "dateUpdated": "Aug 25, 2016 1:08:07 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472087275279_-1303565620",
+      "id": "20160818-194005_2127246603",
+      "dateCreated": "Aug 25, 2016 1:07:55 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Fraud Analytics",
+  "id": "2BW3XNRXK",
+  "angularObjects": {
+    "2BVS7UN8J:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
