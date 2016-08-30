@@ -565,6 +565,86 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "%psql.sql \ndrop table if exists customers_train;drop table if exists customers_predict;\ncreate table customers_train(like customers);insert into customers_train (select * from customers where training\u003d1);\ncreate table customers_predict(like customers);insert into customers_predict (select * from customers where training\u003d0);\n",
+      "dateUpdated": "Aug 30, 2016 3:40:15 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472526339502_-1884322450",
+      "id": "20160830-030539_313253036",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "Update Count\n0\n"
+      },
+      "dateCreated": "Aug 30, 2016 3:05:39 AM",
+      "dateStarted": "Aug 30, 2016 3:39:46 AM",
+      "dateFinished": "Aug 30, 2016 3:39:49 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql.sql\nselect count(*) from customers_train;",
+      "dateUpdated": "Aug 30, 2016 3:40:08 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1472528398544_-858455476",
+      "id": "20160830-033958_1976902601",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "count\n10\n"
+      },
+      "dateCreated": "Aug 30, 2016 3:39:58 AM",
+      "dateStarted": "Aug 30, 2016 3:40:08 AM",
+      "dateFinished": "Aug 30, 2016 3:40:08 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%psql.sql \nDROP TABLE IF EXISTS customers_summary;\nSELECT madlib.summary(\n                      \u0027customers\u0027,                    -- source                           \n                      \u0027customers_summary\u0027,            -- output \n                      \u0027*\u0027,                       -- targets \n                      NULL                       -- groups \n                      ); ",
       "dateUpdated": "Aug 30, 2016 2:30:53 AM",
       "config": {
@@ -875,8 +955,8 @@
     },
     {
       "title": "Credit Scoring using Logistic Regression",
-      "text": "%psql.sql\ndrop table if exists customers_logregr;drop table if exists customers_logregr_summary;\nSELECT madlib.logregr_train( \u0027customers\u0027,\n                             \u0027customers_logregr\u0027,\n                             \u0027creditability\u0027,\n                             \u0027ARRAY[1, accountBalanceStatus, paymentStatusPrevCredit,purpose,savingsValue,employmentLength,sexMaritalStatus,mostValAsset,typeResidence,existingLines,existingLinesBank,creditPercent,creditDuration,creditAmount]\u0027,\n                             NULL,\n                             20,\n                            \u0027irls\u0027\n                           );select * from customers_logregr;\n",
-      "dateUpdated": "Aug 30, 2016 2:31:29 AM",
+      "text": "%psql.sql\ndrop table if exists customers_logregr;drop table if exists customers_logregr_summary;\nSELECT madlib.logregr_train( \u0027customers_train\u0027,\n                             \u0027customers_logregr\u0027,\n                             \u0027creditability\u0027,\n                             \u0027ARRAY[1, accountBalanceStatus, paymentStatusPrevCredit,purpose,savingsValue,employmentLength,sexMaritalStatus,mostValAsset,typeResidence,existingLines,existingLinesBank,creditPercent,creditDuration,creditAmount]\u0027,\n                             NULL,\n                             20,\n                            \u0027irls\u0027\n                           );select * from customers_logregr;\n",
+      "dateUpdated": "Aug 30, 2016 3:40:37 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -917,14 +997,14 @@
         "msg": "Update Count\n0\n"
       },
       "dateCreated": "Aug 25, 2016 5:24:31 AM",
-      "dateStarted": "Aug 30, 2016 2:31:30 AM",
-      "dateFinished": "Aug 30, 2016 2:31:31 AM",
+      "dateStarted": "Aug 30, 2016 3:40:37 AM",
+      "dateFinished": "Aug 30, 2016 3:40:39 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%psql.sql \nSELECT c.customernum, madlib.logregr_predict(coef,ARRAY[1, accountBalanceStatus, paymentStatusPrevCredit,purpose,savingsValue,employmentLength,sexMaritalStatus,mostValAsset,typeResidence,existingLines,existingLinesBank,creditPercent,creditDuration,creditAmount]),\n      c.creditability\nFROM customers c, customers_logregr cl\nORDER BY  c.creditability;",
-      "dateUpdated": "Aug 30, 2016 2:36:25 AM",
+      "text": "%psql.sql \nSELECT c.customernum, madlib.logregr_predict(coef,ARRAY[1, accountBalanceStatus, paymentStatusPrevCredit,purpose,savingsValue,employmentLength,sexMaritalStatus,mostValAsset,typeResidence,existingLines,existingLinesBank,creditPercent,creditDuration,creditAmount]),\n      c.creditability\nFROM customers_predict c, customers_logregr cl\nORDER BY  c.creditability;",
+      "dateUpdated": "Aug 30, 2016 3:41:38 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -971,17 +1051,17 @@
       "result": {
         "code": "SUCCESS",
         "type": "TABLE",
-        "msg": "customernum\tlogregr_predict\tcreditability\n40998\tt\t0\n40997\tt\t0\n40996\tt\t0\n40995\tt\t0\n40994\tf\t0\n40993\tt\t0\n40992\tt\t0\n40991\tf\t0\n40990\tf\t0\n40989\tf\t0\n40988\tt\t0\n40987\tt\t0\n40986\tt\t0\n40985\tt\t0\n40984\tt\t0\n40983\tf\t0\n40982\tt\t0\n40981\tt\t0\n40980\tt\t0\n40979\tt\t0\n40978\tt\t0\n40977\tf\t0\n40976\tf\t0\n40975\tf\t0\n40974\tt\t0\n40973\tf\t0\n40972\tt\t0\n40971\tf\t0\n40970\tt\t0\n40969\tf\t0\n40968\tf\t0\n40967\tt\t0\n40966\tt\t0\n40965\tf\t0\n40964\tt\t0\n40963\tf\t0\n40962\tf\t0\n40961\tt\t0\n40960\tt\t0\n40959\tt\t0\n40958\tf\t0\n40957\tf\t0\n40956\tf\t0\n40955\tt\t0\n40954\tt\t0\n40953\tt\t0\n40952\tt\t0\n40951\tt\t0\n40950\tf\t0\n40949\tt\t0\n40948\tf\t0\n40947\tt\t0\n40946\tt\t0\n40945\tt\t0\n40944\tt\t0\n40943\tt\t0\n40942\tt\t0\n40941\tt\t0\n40940\tt\t0\n40939\tf\t0\n40938\tf\t0\n40937\tt\t0\n40936\tt\t0\n40935\tf\t0\n40934\tt\t0\n40933\tt\t0\n40932\tt\t0\n40931\tf\t0\n40930\tt\t0\n40929\tf\t0\n40928\tf\t0\n40927\tt\t0\n40926\tf\t0\n40925\tt\t0\n40924\tt\t0\n40923\tf\t0\n40922\tf\t0\n40921\tf\t0\n40920\tf\t0\n40919\tf\t0\n40918\tf\t0\n40917\tf\t0\n40916\tf\t0\n40915\tt\t0\n40914\tf\t0\n40913\tf\t0\n40912\tf\t0\n40911\tt\t0\n40910\tf\t0\n40909\tf\t0\n40908\tt\t0\n40907\tf\t0\n40906\tf\t0\n40905\tt\t0\n40904\tf\t0\n40903\tt\t0\n40902\tf\t0\n40901\tt\t0\n40900\tt\t0\n40899\tt\t0\n40898\tt\t0\n40897\tt\t0\n40896\tt\t0\n40895\tf\t0\n40894\tt\t0\n40893\tf\t0\n40892\tt\t0\n40891\tf\t0\n40890\tf\t0\n40889\tf\t0\n40888\tf\t0\n40887\tf\t0\n40886\tf\t0\n40885\tf\t0\n40884\tt\t0\n40883\tt\t0\n40882\tf\t0\n40881\tf\t0\n40880\tf\t0\n40879\tt\t0\n40878\tf\t0\n40877\tf\t0\n40876\tt\t0\n40875\tt\t0\n40874\tf\t0\n40873\tt\t0\n40872\tt\t0\n40871\tt\t0\n40870\tf\t0\n40869\tf\t0\n40868\tf\t0\n40867\tf\t0\n40866\tf\t0\n40865\tt\t0\n40864\tf\t0\n40863\tt\t0\n40862\tt\t0\n40861\tf\t0\n40860\tt\t0\n40859\tt\t0\n40858\tf\t0\n40857\tf\t0\n40856\tf\t0\n40855\tf\t0\n40854\tt\t0\n40853\tt\t0\n40852\tt\t0\n40851\tf\t0\n40850\tf\t0\n40849\tt\t0\n40848\tf\t0\n40847\tf\t0\n40846\tf\t0\n40845\tt\t0\n40844\tt\t0\n40843\tf\t0\n40842\tt\t0\n40841\tt\t0\n40840\tt\t0\n40839\tt\t0\n40838\tt\t0\n40837\tf\t0\n40836\tt\t0\n40835\tf\t0\n40834\tt\t0\n40833\tt\t0\n40832\tt\t0\n40831\tt\t0\n40830\tf\t0\n40829\tf\t0\n40828\tt\t0\n40827\tt\t0\n40826\tf\t0\n40825\tt\t0\n40824\tf\t0\n40823\tf\t0\n40822\tf\t0\n40821\tf\t0\n40820\tf\t0\n40819\tt\t0\n40818\tt\t0\n40817\tt\t0\n40816\tt\t0\n40815\tt\t0\n40814\tt\t0\n40813\tt\t0\n40812\tt\t0\n40811\tf\t0\n40810\tf\t0\n40809\tf\t0\n40808\tf\t0\n40807\tf\t0\n40806\tf\t0\n40805\tf\t0\n40804\tt\t0\n40803\tt\t0\n40802\tt\t0\n40801\tf\t0\n40800\tt\t0\n40799\tt\t0\n40798\tt\t0\n40797\tt\t0\n40796\tt\t0\n40795\tf\t0\n40794\tt\t0\n40793\tf\t0\n40792\tf\t0\n40791\tt\t0\n40790\tf\t0\n40789\tt\t0\n40788\tt\t0\n40787\tt\t0\n40786\tt\t0\n40785\tt\t0\n40784\tf\t0\n40783\tt\t0\n40782\tf\t0\n40781\tt\t0\n40780\tt\t0\n40779\tt\t0\n40778\tt\t0\n40777\tt\t0\n40776\tt\t0\n40775\tf\t0\n40774\tt\t0\n40773\tf\t0\n40772\tt\t0\n40771\tt\t0\n40770\tf\t0\n40769\tt\t0\n40768\tt\t0\n40767\tt\t0\n40766\tt\t0\n40765\tt\t0\n40764\tt\t0\n40763\tf\t0\n40762\tt\t0\n40761\tf\t0\n40760\tf\t0\n40759\tf\t0\n40758\tf\t0\n40757\tf\t0\n40756\tt\t0\n40755\tf\t0\n40754\tt\t0\n40753\tf\t0\n40752\tt\t0\n40751\tf\t0\n40304\tt\t0\n40022\tf\t0\n40427\tt\t0\n40610\tt\t0\n40110\tf\t0\n40097\tt\t0\n40376\tf\t0\n40521\tf\t0\n40742\tt\t0\n40520\tt\t0\n40604\tf\t0\n40689\tf\t0\n40542\tt\t0\n40519\tt\t0\n40643\tf\t0\n40540\tt\t0\n40600\tf\t0\n40599\tf\t0\n40518\tt\t0\n40562\tf\t0\n40517\tt\t0\n40636\tt\t0\n40045\tf\t0\n40386\tt\t0\n40593\tf\t0\n40592\tf\t0\n40450\tt\t0\n40171\tf\t0\n40353\tt\t0\n40463\tf\t0\n40720\tt\t0\n40719\tf\t0\n40718\tt\t0\n40717\tt\t0\n40234\tt\t0\n40158\tf\t0\n40431\tt\t0\n40584\tf\t0\n40583\tf\t0\n40582\tt\t0\n40581\tf\t0\n40580\tf\t0\n40708\tf\t0\n40579\tf\t0\n40618\tf\t0\n40578\tt\t0\n40577\tf\t0\n40576\tf\t0\n40047\tt\t0\n40656\tt\t0\n40700\tt\t0\n40999\tt\t0\n40310\tt\t1\n40311\tt\t1\n40312\tt\t1\n40313\tt\t1\n40314\tt\t1\n40315\tt\t1\n40316\tt\t1\n40317\tt\t1\n40318\tt\t1\n40319\tt\t1\n40320\tt\t1\n40321\tt\t1\n40322\tt\t1\n40323\tt\t1\n40324\tt\t1\n40325\tt\t1\n40326\tt\t1\n40327\tt\t1\n40328\tt\t1\n40329\tt\t1\n40330\tt\t1\n40331\tt\t1\n40332\tt\t1\n40333\tt\t1\n40334\tt\t1\n40335\tf\t1\n40336\tt\t1\n40337\tt\t1\n40338\tt\t1\n40339\tt\t1\n40340\tt\t1\n40341\tf\t1\n40342\tt\t1\n40343\tt\t1\n40344\tt\t1\n40345\tt\t1\n40346\tt\t1\n40347\tt\t1\n40348\tt\t1\n40349\tt\t1\n40350\tt\t1\n40351\tt\t1\n40352\tt\t1\n40354\tt\t1\n40355\tt\t1\n40356\tf\t1\n40357\tt\t1\n40358\tt\t1\n40359\tt\t1\n40360\tt\t1\n40361\tf\t1\n40362\tt\t1\n40363\tt\t1\n40364\tt\t1\n40365\tt\t1\n40366\tt\t1\n40367\tt\t1\n40368\tf\t1\n40369\tf\t1\n40370\tt\t1\n40371\tt\t1\n40372\tt\t1\n40373\tt\t1\n40374\tt\t1\n40375\tf\t1\n40377\tt\t1\n40378\tt\t1\n40379\tt\t1\n40380\tf\t1\n40381\tf\t1\n40382\tt\t1\n40383\tt\t1\n40384\tt\t1\n40385\tt\t1\n40387\tt\t1\n40388\tt\t1\n40389\tt\t1\n40390\tt\t1\n40391\tt\t1\n40392\tt\t1\n40393\tt\t1\n40394\tt\t1\n40395\tt\t1\n40396\tt\t1\n40397\tt\t1\n40398\tt\t1\n40399\tt\t1\n40400\tf\t1\n40401\tt\t1\n40402\tt\t1\n40403\tt\t1\n40404\tt\t1\n40405\tt\t1\n40406\tt\t1\n40407\tt\t1\n40408\tt\t1\n40409\tt\t1\n40410\tt\t1\n40411\tt\t1\n40412\tt\t1\n40413\tt\t1\n40414\tt\t1\n40415\tt\t1\n40416\tt\t1\n40417\tt\t1\n40418\tt\t1\n40419\tt\t1\n40420\tt\t1\n40421\tt\t1\n40422\tt\t1\n40423\tt\t1\n40424\tt\t1\n40425\tt\t1\n40426\tf\t1\n40428\tt\t1\n40429\tt\t1\n40430\tt\t1\n40432\tt\t1\n40433\tt\t1\n40434\tt\t1\n40435\tt\t1\n40436\tt\t1\n40437\tt\t1\n40438\tf\t1\n40439\tt\t1\n40440\tt\t1\n40441\tt\t1\n40442\tt\t1\n40443\tt\t1\n40444\tt\t1\n40445\tt\t1\n40446\tt\t1\n40447\tt\t1\n40448\tt\t1\n40449\tt\t1\n40451\tt\t1\n40452\tt\t1\n40453\tt\t1\n40454\tt\t1\n40455\tt\t1\n40456\tt\t1\n40457\tt\t1\n40458\tt\t1\n40459\tt\t1\n40460\tt\t1\n40461\tt\t1\n40462\tt\t1\n40464\tt\t1\n40465\tt\t1\n40466\tt\t1\n40467\tt\t1\n40468\tf\t1\n40469\tt\t1\n40470\tt\t1\n40471\tt\t1\n40472\tt\t1\n40473\tt\t1\n40474\tt\t1\n40475\tt\t1\n40476\tt\t1\n40477\tt\t1\n40478\tt\t1\n40479\tt\t1\n40480\tt\t1\n40481\tt\t1\n40482\tt\t1\n40483\tt\t1\n40484\tt\t1\n40485\tt\t1\n40486\tt\t1\n40487\tt\t1\n40488\tt\t1\n40489\tt\t1\n40490\tt\t1\n40491\tt\t1\n40492\tf\t1\n40493\tt\t1\n40494\tt\t1\n40495\tt\t1\n40496\tt\t1\n40497\tt\t1\n40498\tt\t1\n40499\tt\t1\n40500\tt\t1\n40501\tt\t1\n40502\tt\t1\n40503\tt\t1\n40504\tt\t1\n40505\tt\t1\n40506\tt\t1\n40507\tt\t1\n40508\tt\t1\n40509\tt\t1\n40510\tt\t1\n40511\tt\t1\n40512\tt\t1\n40513\tt\t1\n40514\tt\t1\n40515\tt\t1\n40516\tt\t1\n40522\tt\t1\n40523\tt\t1\n40524\tt\t1\n40525\tt\t1\n40526\tt\t1\n40527\tt\t1\n40528\tt\t1\n40529\tt\t1\n40530\tt\t1\n40531\tt\t1\n40532\tt\t1\n40533\tt\t1\n40534\tf\t1\n40535\tt\t1\n40536\tt\t1\n40537\tt\t1\n40538\tt\t1\n40539\tf\t1\n40541\tt\t1\n40543\tt\t1\n40544\tt\t1\n40545\tt\t1\n40546\tt\t1\n40547\tt\t1\n40548\tt\t1\n40549\tt\t1\n40550\tt\t1\n40551\tt\t1\n40552\tt\t1\n40553\tt\t1\n40554\tt\t1\n40555\tt\t1\n40556\tf\t1\n40557\tt\t1\n40558\tt\t1\n40559\tt\t1\n40560\tt\t1\n40561\tt\t1\n40563\tt\t1\n40564\tt\t1\n40565\tt\t1\n40566\tt\t1\n40567\tt\t1\n40568\tt\t1\n40569\tt\t1\n40570\tt\t1\n40571\tt\t1\n40572\tf\t1\n40573\tf\t1\n40574\tf\t1\n40575\tf\t1\n40585\tt\t1\n40586\tt\t1\n40587\tt\t1\n40588\tf\t1\n40589\tt\t1\n40590\tt\t1\n40591\tt\t1\n40594\tf\t1\n40595\tt\t1\n40596\tt\t1\n40597\tt\t1\n40598\tt\t1\n40601\tt\t1\n40602\tt\t1\n40603\tt\t1\n40605\tt\t1\n40606\tt\t1\n40607\tt\t1\n40608\tf\t1\n40609\tt\t1\n40611\tf\t1\n40612\tt\t1\n40613\tf\t1\n40614\tf\t1\n40615\tf\t1\n40616\tf\t1\n40617\tt\t1\n40619\tt\t1\n40620\tt\t1\n40621\tt\t1\n40622\tt\t1\n40623\tt\t1\n40624\tt\t1\n40625\tt\t1\n40626\tt\t1\n40627\tt\t1\n40628\tt\t1\n40629\tf\t1\n40630\tf\t1\n40631\tf\t1\n40632\tf\t1\n40633\tf\t1\n40634\tf\t1\n40635\tf\t1\n40637\tt\t1\n40638\tt\t1\n40639\tt\t1\n40640\tt\t1\n40641\tf\t1\n40642\tt\t1\n40644\tt\t1\n40645\tf\t1\n40646\tt\t1\n40647\tt\t1\n40648\tt\t1\n40649\tt\t1\n40650\tt\t1\n40651\tt\t1\n40652\tt\t1\n40653\tt\t1\n40654\tt\t1\n40655\tt\t1\n40657\tt\t1\n40658\tt\t1\n40659\tt\t1\n40660\tt\t1\n40661\tt\t1\n40662\tt\t1\n40663\tt\t1\n40664\tt\t1\n40665\tt\t1\n40666\tt\t1\n40667\tt\t1\n40668\tt\t1\n40669\tt\t1\n40670\tt\t1\n40671\tt\t1\n40672\tt\t1\n40673\tt\t1\n40674\tt\t1\n40675\tt\t1\n40676\tt\t1\n40677\tt\t1\n40678\tt\t1\n40679\tt\t1\n40680\tt\t1\n40681\tt\t1\n40682\tt\t1\n40683\tt\t1\n40684\tt\t1\n40685\tt\t1\n40686\tf\t1\n40687\tf\t1\n40688\tt\t1\n40690\tt\t1\n40691\tt\t1\n40692\tt\t1\n40693\tt\t1\n40694\tt\t1\n40695\tt\t1\n40696\tt\t1\n40697\tt\t1\n40698\tt\t1\n40699\tt\t1\n40701\tt\t1\n40702\tt\t1\n40703\tf\t1\n40704\tt\t1\n40705\tt\t1\n40706\tt\t1\n40707\tt\t1\n40709\tt\t1\n40710\tt\t1\n40711\tf\t1\n40712\tt\t1\n40713\tt\t1\n40714\tt\t1\n40715\tf\t1\n40716\tf\t1\n40721\tt\t1\n40722\tt\t1\n40723\tt\t1\n40724\tf\t1\n40725\tt\t1\n40726\tt\t1\n40727\tt\t1\n40728\tt\t1\n40729\tt\t1\n40730\tf\t1\n40731\tt\t1\n40732\tt\t1\n40733\tf\t1\n40734\tf\t1\n40735\tt\t1\n40736\tt\t1\n40737\tt\t1\n40738\tt\t1\n40739\tf\t1\n40740\tt\t1\n40741\tt\t1\n40743\tt\t1\n40744\tt\t1\n40745\tt\t1\n40746\tt\t1\n40747\tt\t1\n40748\tt\t1\n40749\tt\t1\n40750\tt\t1\n40308\tf\t1\n40307\tt\t1\n40306\tt\t1\n40305\tt\t1\n40303\tt\t1\n40302\tt\t1\n40301\tt\t1\n40300\tf\t1\n40299\tt\t1\n40298\tt\t1\n40297\tt\t1\n40296\tt\t1\n40295\tt\t1\n40294\tt\t1\n40293\tt\t1\n40292\tt\t1\n40291\tt\t1\n40290\tt\t1\n40289\tt\t1\n40288\tt\t1\n40287\tt\t1\n40286\tt\t1\n40285\tt\t1\n40284\tf\t1\n40283\tt\t1\n40282\tt\t1\n40281\tt\t1\n40280\tt\t1\n40279\tt\t1\n40278\tf\t1\n40277\tt\t1\n40276\tt\t1\n40275\tt\t1\n40274\tt\t1\n40273\tt\t1\n40272\tt\t1\n40271\tt\t1\n40270\tt\t1\n40269\tt\t1\n40268\tt\t1\n40267\tt\t1\n40266\tt\t1\n40265\tt\t1\n40264\tt\t1\n40263\tt\t1\n40262\tt\t1\n40261\tt\t1\n40260\tt\t1\n40259\tt\t1\n40258\tt\t1\n40257\tt\t1\n40256\tt\t1\n40255\tt\t1\n40254\tt\t1\n40253\tt\t1\n40252\tt\t1\n40251\tt\t1\n40250\tt\t1\n40249\tt\t1\n40248\tt\t1\n40247\tt\t1\n40246\tt\t1\n40245\tt\t1\n40244\tt\t1\n40243\tt\t1\n40242\tt\t1\n40241\tt\t1\n40240\tt\t1\n40239\tt\t1\n40238\tt\t1\n40237\tf\t1\n40236\tt\t1\n40235\tf\t1\n40233\tf\t1\n40232\tt\t1\n40231\tt\t1\n40230\tt\t1\n40229\tf\t1\n40228\tt\t1\n40227\tt\t1\n40226\tf\t1\n40225\tt\t1\n40224\tt\t1\n40223\tt\t1\n40222\tt\t1\n40221\tt\t1\n40220\tf\t1\n40219\tt\t1\n40218\tf\t1\n40217\tt\t1\n40216\tt\t1\n40215\tt\t1\n40214\tt\t1\n40213\tt\t1\n40212\tf\t1\n40211\tf\t1\n40210\tt\t1\n40209\tt\t1\n40208\tf\t1\n40207\tt\t1\n40206\tt\t1\n40205\tt\t1\n40204\tt\t1\n40203\tt\t1\n40202\tt\t1\n40201\tt\t1\n40200\tt\t1\n40199\tt\t1\n40198\tt\t1\n40197\tt\t1\n40196\tt\t1\n40195\tt\t1\n40194\tt\t1\n40193\tt\t1\n40192\tt\t1\n40191\tt\t1\n40190\tt\t1\n40189\tt\t1\n40188\tt\t1\n40187\tt\t1\n40186\tt\t1\n40185\tt\t1\n40184\tt\t1\n40183\tt\t1\n40182\tf\t1\n40181\tt\t1\n40180\tt\t1\n40179\tt\t1\n40178\tt\t1\n40177\tt\t1\n40176\tt\t1\n40175\tt\t1\n40174\tt\t1\n40173\tt\t1\n40172\tt\t1\n40170\tt\t1\n40169\tt\t1\n40168\tt\t1\n40167\tt\t1\n40166\tt\t1\n40165\tt\t1\n40164\tt\t1\n40163\tt\t1\n40162\tt\t1\n40161\tt\t1\n40160\tt\t1\n40159\tt\t1\n40157\tt\t1\n40156\tf\t1\n40155\tt\t1\n40154\tt\t1\n40153\tt\t1\n40152\tt\t1\n40151\tt\t1\n40150\tt\t1\n40149\tt\t1\n40148\tt\t1\n40147\tt\t1\n40146\tt\t1\n40145\tt\t1\n40144\tt\t1\n40143\tt\t1\n40142\tt\t1\n40141\tt\t1\n40140\tt\t1\n40139\tt\t1\n40138\tt\t1\n40137\tf\t1\n40136\tt\t1\n40135\tt\t1\n40134\tt\t1\n40133\tt\t1\n40132\tt\t1\n40131\tt\t1\n40130\tt\t1\n40129\tt\t1\n40128\tt\t1\n40127\tt\t1\n40126\tt\t1\n40125\tt\t1\n40124\tt\t1\n40123\tt\t1\n40122\tt\t1\n40121\tt\t1\n40120\tf\t1\n40119\tt\t1\n40118\tt\t1\n40117\tt\t1\n40116\tt\t1\n40115\tt\t1\n40114\tt\t1\n40113\tt\t1\n40112\tt\t1\n40111\tt\t1\n40109\tt\t1\n40108\tt\t1\n40107\tt\t1\n40106\tt\t1\n40105\tt\t1\n40104\tt\t1\n40103\tf\t1\n40102\tt\t1\n40101\tt\t1\n40100\tt\t1\n40099\tt\t1\n40098\tt\t1\n40096\tt\t1\n40095\tt\t1\n40094\tt\t1\n40093\tt\t1\n40092\tf\t1\n40091\tt\t1\n40090\tt\t1\n40089\tt\t1\n40088\tt\t1\n40087\tt\t1\n40086\tt\t1\n40085\tt\t1\n40084\tt\t1\n40083\tt\t1\n40082\tt\t1\n40081\tt\t1\n40080\tt\t1\n40079\tt\t1\n40078\tt\t1\n40077\tt\t1\n40076\tt\t1\n40075\tt\t1\n40074\tt\t1\n40073\tt\t1\n40072\tt\t1\n40071\tt\t1\n40070\tt\t1\n40069\tt\t1\n40068\tt\t1\n40067\tt\t1\n40066\tt\t1\n40065\tt\t1\n40064\tt\t1\n40063\tt\t1\n40062\tt\t1\n40061\tt\t1\n40060\tt\t1\n40059\tt\t1\n40058\tt\t1\n40057\tt\t1\n40056\tt\t1\n40055\tt\t1\n40054\tt\t1\n40053\tt\t1\n40052\tt\t1\n40051\tt\t1\n40050\tt\t1\n40049\tt\t1\n40048\tt\t1\n40046\tt\t1\n40044\tt\t1\n40043\tt\t1\n40042\tt\t1\n40041\tt\t1\n40040\tt\t1\n40039\tt\t1\n40038\tt\t1\n40037\tt\t1\n40036\tt\t1\n40035\tt\t1\n40034\tt\t1\n40033\tt\t1\n40032\tt\t1\n40031\tt\t1\n40030\tt\t1\n40029\tt\t1\n40028\tt\t1\n40027\tt\t1\n40026\tf\t1\n40025\tt\t1\n40024\tt\t1\n40023\tt\t1\n40021\tt\t1\n40020\tt\t1\n40019\tt\t1\n40018\tt\t1\n40017\tt\t1\n40016\tt\t1\n40015\tt\t1\n40014\tt\t1\n40013\tf\t1\n40012\tt\t1\n40011\tt\t1\n40010\tt\t1\n40009\tt\t1\n40008\tt\t1\n40007\tt\t1\n40006\tt\t1\n40005\tt\t1\n40004\tt\t1\n40003\tt\t1\n40002\tt\t1\n40001\tt\t1\n40000\tf\t1\n40309\tt\t1\n"
+        "msg": "customernum\tlogregr_predict\tcreditability\n40022\tt\t0\n40097\tt\t0\n40045\tt\t0\n40047\tt\t0\n40015\tt\t1\n40016\tt\t1\n40017\tt\t1\n40018\tt\t1\n40019\tt\t1\n40020\tt\t1\n40021\tt\t1\n40023\tt\t1\n40024\tt\t1\n40025\tt\t1\n40026\tt\t1\n40027\tt\t1\n40028\tt\t1\n40029\tt\t1\n40030\tt\t1\n40031\tt\t1\n40032\tt\t1\n40033\tt\t1\n40034\tt\t1\n40035\tt\t1\n40036\tt\t1\n40037\tt\t1\n40038\tt\t1\n40039\tt\t1\n40040\tt\t1\n40041\tt\t1\n40042\tt\t1\n40043\tt\t1\n40044\tt\t1\n40046\tt\t1\n40048\tt\t1\n40049\tt\t1\n40050\tt\t1\n40051\tt\t1\n40052\tt\t1\n40053\tt\t1\n40054\tt\t1\n40055\tt\t1\n40056\tt\t1\n40057\tt\t1\n40058\tt\t1\n40059\tt\t1\n40060\tt\t1\n40061\tt\t1\n40062\tt\t1\n40063\tt\t1\n40064\tt\t1\n40065\tt\t1\n40066\tt\t1\n40067\tt\t1\n40068\tt\t1\n40069\tt\t1\n40070\tt\t1\n40071\tt\t1\n40072\tt\t1\n40073\tt\t1\n40074\tt\t1\n40075\tt\t1\n40076\tt\t1\n40077\tt\t1\n40078\tt\t1\n40079\tt\t1\n40080\tt\t1\n40081\tt\t1\n40082\tt\t1\n40083\tt\t1\n40084\tt\t1\n40085\tt\t1\n40086\tt\t1\n40087\tt\t1\n40088\tt\t1\n40089\tt\t1\n40090\tt\t1\n40091\tt\t1\n40092\tt\t1\n40093\tt\t1\n40094\tt\t1\n40095\tt\t1\n40096\tt\t1\n40098\tt\t1\n40099\tt\t1\n40013\tt\t1\n40012\tt\t1\n40011\tt\t1\n40010\tt\t1\n40014\tt\t1\n"
       },
       "dateCreated": "Aug 29, 2016 9:39:00 AM",
-      "dateStarted": "Aug 30, 2016 2:31:38 AM",
-      "dateFinished": "Aug 30, 2016 2:31:39 AM",
+      "dateStarted": "Aug 30, 2016 3:41:38 AM",
+      "dateFinished": "Aug 30, 2016 3:41:39 AM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%psql.sql \nselect 1",
-      "dateUpdated": "Aug 30, 2016 2:43:32 AM",
+      "text": "",
+      "dateUpdated": "Aug 30, 2016 3:42:24 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -994,7 +1074,7 @@
           "scatter": {}
         },
         "enabled": true,
-        "editorMode": "ace/mode/sql"
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
