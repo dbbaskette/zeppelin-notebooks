@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes"?>
+<PMML version="4.1" xmlns="http://www.dmg.org/PMML-4_1">
+  <Header copyright="Copyright (c) 2016 gpadmin">
+    <Extension extender="MADlib" name="user" value="gpadmin"/>
+    <Application name="MADlib" version="1.9"/>
+    <Timestamp>
+      2016-08-30 16:07:53.482080 UTC
+    </Timestamp>
+  </Header>
+  <DataDictionary numberOfFields="15">
+    <DataField dataType="boolean" name="creditability_pmml_prediction" optype="categorical">
+      <Value value="True"/>
+      <Value value="False"/>
+    </DataField>
+    <DataField dataType="double" name="1" optype="continuous"/>
+    <DataField dataType="double" name="accountBalanceStatus" optype="continuous"/>
+    <DataField dataType="double" name="paymentStatusPrevCredit" optype="continuous"/>
+    <DataField dataType="double" name="purpose" optype="continuous"/>
+    <DataField dataType="double" name="savingsValue" optype="continuous"/>
+    <DataField dataType="double" name="employmentLength" optype="continuous"/>
+    <DataField dataType="double" name="sexMaritalStatus" optype="continuous"/>
+    <DataField dataType="double" name="mostValAsset" optype="continuous"/>
+    <DataField dataType="double" name="typeResidence" optype="continuous"/>
+    <DataField dataType="double" name="existingLines" optype="continuous"/>
+    <DataField dataType="double" name="existingLinesBank" optype="continuous"/>
+    <DataField dataType="double" name="creditPercent" optype="continuous"/>
+    <DataField dataType="double" name="creditDuration" optype="continuous"/>
+    <DataField dataType="double" name="creditAmount" optype="continuous"/>
+  </DataDictionary>
+  <RegressionModel functionName="classification" normalizationMethod="softmax">
+    <MiningSchema>
+      <MiningField name="creditability_pmml_prediction" usageType="predicted"/>
+      <MiningField name="1"/>
+      <MiningField name="accountBalanceStatus"/>
+      <MiningField name="paymentStatusPrevCredit"/>
+      <MiningField name="purpose"/>
+      <MiningField name="savingsValue"/>
+      <MiningField name="employmentLength"/>
+      <MiningField name="sexMaritalStatus"/>
+      <MiningField name="mostValAsset"/>
+      <MiningField name="typeResidence"/>
+      <MiningField name="existingLines"/>
+      <MiningField name="existingLinesBank"/>
+      <MiningField name="creditPercent"/>
+      <MiningField name="creditDuration"/>
+      <MiningField name="creditAmount"/>
+    </MiningSchema>
+    <RegressionTable intercept="0.0" targetCategory="True">
+      <NumericPredictor coefficient="-264.871153946" name="1"/>
+      <NumericPredictor coefficient="-15.4430993691" name="accountBalanceStatus"/>
+      <NumericPredictor coefficient="37.3689458436" name="paymentStatusPrevCredit"/>
+      <NumericPredictor coefficient="-18.7979598603" name="purpose"/>
+      <NumericPredictor coefficient="5.24482887734" name="savingsValue"/>
+      <NumericPredictor coefficient="31.5412424946" name="employmentLength"/>
+      <NumericPredictor coefficient="58.4291445394" name="sexMaritalStatus"/>
+      <NumericPredictor coefficient="13.0498056888" name="mostValAsset"/>
+      <NumericPredictor coefficient="136.777917134" name="typeResidence"/>
+      <NumericPredictor coefficient="70.8712527555" name="existingLines"/>
+      <NumericPredictor coefficient="-52.5330887751" name="existingLinesBank"/>
+      <NumericPredictor coefficient="-91.0940141512" name="creditPercent"/>
+      <NumericPredictor coefficient="3.05010411089" name="creditDuration"/>
+      <NumericPredictor coefficient="-0.0159229179149" name="creditAmount"/>
+    </RegressionTable>
+    <RegressionTable intercept="0.0" targetCategory="False"/>
+  </RegressionModel>
+</PMML>
