@@ -72,8 +72,8 @@
     },
     {
       "title": "Create PXF External Table to Access CSV File",
-      "text": "%psql.sql\n\nDROP SCHEMA text CASCADE;\nCREATE SCHEMA text;\nDROP EXTERNAL TABLE IF EXISTS  text.customer;\nCREATE EXTERNAL TABLE text.customer \n    ( c_customer_sk             bigint              \n  , c_customer_id             text              \n  , c_current_cbigbench_sk        bigint\n  , c_current_hbigbench_sk        bigint\n  , c_current_addr_sk         bigint\n  , c_first_shipto_date_sk    bigint\n  , c_first_sales_date_sk     bigint\n  , c_salutation              text\n  , c_first_name              text\n  , c_last_name               text\n  , c_preferred_cust_flag     text\n  , c_birth_day               int\n  , c_birth_month             int\n  , c_birth_year              int\n  , c_birth_country           text\n  , c_login                   text\n  , c_email_address           text\n  , c_last_review_date        text\n)\nLOCATION (\u0027pxf://pxfdemo-002.c.marketing-dbaskette.internal:51200/user/hdfs/benchmarks/bigbench/data/customer?Profile\u003dHdfsTextSimple\u0027)\n      FORMAT \u0027CSV\u0027 (DELIMITER\u003d\u0027|\u0027);",
-      "dateUpdated": "Oct 4, 2016 6:39:58 PM",
+      "text": "%psql.sql\n\nDROP SCHEMA text CASCADE;\nCREATE SCHEMA text;\nDROP EXTERNAL TABLE IF EXISTS  text.customer;\nCREATE EXTERNAL TABLE text.customer \n    ( c_customer_sk             bigint              \n  , c_customer_id             text              \n  , c_current_cbigbench_sk        bigint\n  , c_current_hbigbench_sk        bigint\n  , c_current_addr_sk         bigint\n  , c_first_shipto_date_sk    bigint\n  , c_first_sales_date_sk     bigint\n  , c_salutation              text\n  , c_first_name              text\n  , c_last_name               text\n  , c_preferred_cust_flag     text\n  , c_birth_day               int\n  , c_birth_month             int\n  , c_birth_year              int\n  , c_birth_country           text\n  , c_login                   text\n  , c_email_address           text\n  , c_last_review_date        text\n)\nLOCATION (\u0027pxf://pxfdemo-001.c.marketing-dbaskette.internal:51200/user/hdfs/benchmarks/bigbench/data/customer?Profile\u003dHdfsTextSimple\u0027)\n      FORMAT \u0027CSV\u0027 (DELIMITER\u003d\u0027|\u0027);",
+      "dateUpdated": "Oct 4, 2016 8:25:35 PM",
       "config": {
         "colWidth": 5.0,
         "graph": {
@@ -115,14 +115,14 @@
         "msg": "Update Count\n0\n"
       },
       "dateCreated": "Oct 4, 2016 5:44:54 AM",
-      "dateStarted": "Oct 4, 2016 6:39:55 PM",
-      "dateFinished": "Oct 4, 2016 6:39:55 PM",
+      "dateStarted": "Oct 4, 2016 8:25:35 PM",
+      "dateFinished": "Oct 4, 2016 8:25:35 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%psql.sql\n\nselect * from text.customer limit 8;\n\n\n\n",
-      "dateUpdated": "Oct 4, 2016 6:40:01 PM",
+      "dateUpdated": "Oct 4, 2016 8:25:39 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -169,11 +169,191 @@
       "result": {
         "code": "SUCCESS",
         "type": "TABLE",
-        "msg": "c_customer_sk\tc_customer_id\tc_current_cbigbench_sk\tc_current_hbigbench_sk\tc_current_addr_sk\tc_first_shipto_date_sk\tc_first_sales_date_sk\tc_salutation\tc_first_name\tc_last_name\tc_preferred_cust_flag\tc_birth_day\tc_birth_month\tc_birth_year\tc_birth_country\tc_login\tc_email_address\tc_last_review_date\n62608\tAAAAAAAAAAAADOQA\t1062317\t5361\t74200\t109567\t76842\tMrs.\tBelinda\tBarker\tN\t6\t1\t1992\tMALAWI\tlD4Mp\tBelinda.Barker@box.az\tek\n62609\tAAAAAAAAAAAADOQB\t1698501\t5305\t99338\t108025\t72403\tMiss\tRhonda\tDaniels\tY\t27\t8\t1974\tAFGHANISTAN\tIIXJDDikq\tRhonda.Daniels@army.com\tG1cseYla\n62610\tAAAAAAAAAAAADOQC\t704384\t2555\t117759\t60015\t59559\tDr.\tAlan\tCass\tN\t19\t10\t1966\tALBANIA\tSuVuqRPTP\tAlan.Cass@hush.com\tLBm\n62611\tAAAAAAAAAAAADOQD\t922486\t4135\t1281\t99327\t56771\tMiss\tTiffany\tNichols\tY\t17\t12\t1991\tAZERBAIJAN\tsOyasncg\tTiffany.Nichols@mailvault.com\tbCYMdvTR\n62612\tAAAAAAAAAAAADOQE\t1526273\t3540\t108641\t73908\t71693\tMr.\tMichael\tBryant\tN\t17\t11\t1959\tCOSTA RICA\txod\tMichael.Bryant@born2frag.de\tdtC\n62613\tAAAAAAAAAAAADOQF\t281155\t5095\t86023\t7813\t90803\tDr.\tAudrey\tGraves\tY\t20\t12\t1944\tLIECHTENSTEIN\teH3qxW7NH\tAudrey.Graves@enveloped.org\t10aS\n62614\tAAAAAAAAAAAADOQG\t353710\t792\t109276\t83142\t53744\tDr.\tDanielle\tWhitley\tN\t16\t8\t1934\tCOOK ISLANDS\teBLpYh6\tDanielle.Whitley@mac.hush.com\tlR\n62615\tAAAAAAAAAAAADOQH\t1649270\t4440\t117943\t45861\t84653\tDr.\tThomas\tVallejo\tN\t25\t10\t1979\tPOLAND\tD838r\tThomas.Vallejo@privacyharbor.com\tKF0nIe\n"
+        "msg": "c_customer_sk\tc_customer_id\tc_current_cbigbench_sk\tc_current_hbigbench_sk\tc_current_addr_sk\tc_first_shipto_date_sk\tc_first_sales_date_sk\tc_salutation\tc_first_name\tc_last_name\tc_preferred_cust_flag\tc_birth_day\tc_birth_month\tc_birth_year\tc_birth_country\tc_login\tc_email_address\tc_last_review_date\n0\tAAAAAAAAAAAAAAAA\t1824793\t3203\t8082\t28776\t14690\tMs.\tMarisa\tHarrington\tN\t17\t4\t1988\tUNITED ARAB EMIRATES\tRRCyuY3XfE3a\tMarisa.Harrington@lawyer.com\tgdMmGdU9\n1\tAAAAAAAAAAAAAAAB\t830976\t2600\t29067\t94658\t19931\tMiss\tBessie\tCalderon\tN\t20\t10\t1945\tMONACO\taCJb9cc\tBessie.Calderon@snail-mail.net\thLQn0LtVa\n2\tAAAAAAAAAAAAAAAC\t335540\t5527\t44562\t31783\t106195\tMiss\tBarbara\tHoover\tY\t3\t4\t1952\tGREENLAND\t59cfL9Fbpv\tBarbara.Hoover@lawyer.com\tvDVbSOCI\n3\tAAAAAAAAAAAAAAAD\t1056662\t1978\t60471\t8741\t87583\tMr.\tLanny\tBerg\tN\t2\t1\t1932\tCANADA\tTvsKkZgPt\tLanny.Berg@gmx.fr\tZxCh4LKH\n4\tAAAAAAAAAAAAAAAE\t596707\t3971\t69558\t14688\t75952\tMrs.\tGina\tFelix\tY\t18\t4\t1959\tNAURU\tt3r2t4rC\tGina.Felix@amplimail.com\tWpJjJ1\n5\tAAAAAAAAAAAAAAAF\t363428\t4888\t67269\t38182\t65826\tDr.\tJudith\tMccain\tN\t11\t10\t1936\tICELAND\tWfT\tJudith.Mccain@privacyharbor.com\tjXmMzRt8\n6\tAAAAAAAAAAAAAAAG\t1601629\t6779\t59377\t48020\t75950\tSir\tLavern\tGuzman\tN\t2\t7\t1952\tGUAM\tSD7IbZaQ\tLavern.Guzman@peacemail.com\txKpEnQ\n7\tAAAAAAAAAAAAAAAH\t260357\t2400\t96733\t20361\t42197\tDr.\tJanice\tMurray\tY\t23\t8\t1976\tLITHUANIA\tp1FXddH8rW\tJanice.Murray@mac.hush.com\txhjGNk98a\n"
       },
       "dateCreated": "Oct 4, 2016 6:20:41 PM",
-      "dateStarted": "Oct 4, 2016 6:40:01 PM",
-      "dateFinished": "Oct 4, 2016 6:40:01 PM",
+      "dateStarted": "Oct 4, 2016 8:25:39 PM",
+      "dateFinished": "Oct 4, 2016 8:25:39 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Clickstream JSON File in HDFS",
+      "text": "%file \n\nls /user/hdfs\n\n\n\n\n\n",
+      "dateUpdated": "Oct 4, 2016 8:53:42 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475614081338_30734886",
+      "id": "20161004-204801_143551169",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ".Trash\n.hiveJars\n.staging\nbenchmarks\nclickstream.json\n"
+      },
+      "dateCreated": "Oct 4, 2016 8:48:01 PM",
+      "dateStarted": "Oct 4, 2016 8:49:27 PM",
+      "dateFinished": "Oct 4, 2016 8:49:28 PM",
+      "status": "ABORT",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "View contents of JSON File in HDFS",
+      "text": "%sh\nhadoop fs -tail /user/hdfs/clickstream.json",
+      "dateUpdated": "Oct 4, 2016 8:54:08 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sh",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475614181708_520474263",
+      "id": "20161004-204941_924481649",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "w.nasa.gov\\/mission_pages\\/station\\/expeditions\\/expedition34\\/newyear.html\", \"t\": 1356999049, \"hc\": 1356983161, \"cy\": \"Tuxtla Gutiérrez\", \"ll\": [ 16.750000, -93.116699 ] }\n{ \"a\": \"Mozilla\\/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit\\/536.26 (KHTML, like Gecko) Mobile\\/10A523\", \"c\": null, \"nk\": 1, \"tz\": \"\", \"g\": \"10sGgGU\", \"h\": \"VUas6m\", \"l\": \"nasatwitter\", \"al\": \"en-us\", \"hh\": \"go.nasa.gov\", \"r\": \"http:\\/\\/t.co\\/0NoHYs9t\", \"u\": \"http:\\/\\/www.nasa.gov\\/mission_pages\\/station\\/expeditions\\/expedition34\\/newyear.html\", \"t\": 1356999052, \"hc\": 1356983161 }\n{ \"a\": \"Mozilla\\/5.0 (Linux; U; Android 4.1.1; it-it; SAMSUNG GT-I9300\\/I9300XXDLIH Build\\/JRO03C) AppleWebKit\\/534.30 (KHTML, like Gecko) Version\\/4.0 Mobile Safari\\/534.30\", \"c\": null, \"nk\": 1, \"tz\": \"\", \"g\": \"WVDxkT\", \"h\": \"TZ1oTH\", \"l\": \"nasatwitter\", \"al\": \"it-IT, en-US\", \"hh\": \"go.nasa.gov\", \"r\": \"http:\\/\\/t.co\\/kmPTLoP8\", \"u\": \"http:\\/\\/www.nasa.gov\\/multimedia\\/imagegallery\\/image_feature_2419.html\", \"t\": 1356999056, \"hc\": 1356963704 }\n"
+      },
+      "dateCreated": "Oct 4, 2016 8:49:41 PM",
+      "dateStarted": "Oct 4, 2016 8:53:03 PM",
+      "dateFinished": "Oct 4, 2016 8:53:05 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Create PXF External Table to Access JSON File",
+      "text": "%psql.sql\n\nDROP SCHEMA json CASCADE;\nCREATE SCHEMA json;      \nCREATE EXTERNAL TABLE  json.clickstream\n( \na  text,\nc  text, \nnk  text, \ng  text,\nh  text,\nl text,\nhh text,\nr text,\nu text,\nt text,\ngr text,\n\"ll[0]\" float,\n\"ll[1]\" float,\ncy text,\ntz text,\nhc text,\nal text\n )\nLOCATION ( \u0027pxf://pxfdemo-001.c.marketing-dbaskette.internal:51200/user/hdfs/clickstream.json?PROFILE\u003dJson\u0027 )\nFORMAT \u0027CUSTOM\u0027 ( FORMATTER\u003d\u0027pxfwritable_import\u0027 );\n",
+      "dateUpdated": "Oct 4, 2016 9:17:09 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475606576346_1151587295",
+      "id": "20161004-184256_1538616633",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "Update Count\n0\n"
+      },
+      "dateCreated": "Oct 4, 2016 6:42:56 PM",
+      "dateStarted": "Oct 4, 2016 9:17:09 PM",
+      "dateFinished": "Oct 4, 2016 9:17:10 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Query JSON File via PXF External Table",
+      "text": "%psql.sql\n\nselect * from json.clickstream limit 10;",
+      "dateUpdated": "Oct 4, 2016 9:17:12 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "a",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "c",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "a",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "c",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475606573806_540606041",
+      "id": "20161004-184253_1106120397",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "a\tc\tnk\tg\th\tl\thh\tr\tu\tt\tgr\tll[0]\tll[1]\tcy\ttz\thc\tal\nZXing (Android)\tUS\t0\tGzGljF\tGzGljE\tusaghumphreys\t1.usa.gov\thttp://partners.bit.ly/qr\thttp://yongsan.korea.army.mil/RSO\t1356995458\tMO\t39.043700999999999\t-92.2714\tColumbia\tAmerica/Chicago\t1332202002\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\nMozilla/5.0 (Windows NT 5.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11\tUS\t0\tPhnT2Q\tPhnT2P\tfsanewmedia\t1.usa.gov\thttp://search.usa.gov/search?affiliate\u003dfederalstudentaid\u0026m\u003dfalse\u0026query\u003dirs+data+retrieval+tool\thttp://www.fafsa.ed.gov/fotw1213/help/irshlp8a.htm?sf6846232\u003d1\t1356995460\tTX\t31.854500000000002\t-106.53299699999999\tEl Paso\tAmerica/Chicago\t1351548005\ten-US,en;q\u003d0.8\nMozilla/5.0 (iPhone; CPU iPhone OS 6_0_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A551\tGB\t0\t10sGgGU\tVUas6m\tnasatwitter\tgo.nasa.gov\thttp://t.co/0NoHYs9t\thttp://www.nasa.gov/mission_pages/station/expeditions/expedition34/newyear.html\t1356995462\tF9\t51.566699999999997\t-0.41670000000000001\tRuislip\tEurope/London\t1356983161\ten-gb\nMozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.4; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPNTDF; InfoPath.2; .NET4.0C; BRI/1; BRI/2)\tUS\t0\tSWHMLX\tSWBOxY\to_72pm96ngqm\t1.usa.gov\thttp://www.linkedin.com/groups/Seattle-gun-control-37871.S.198140244?view\u003d\u0026gid\u003d37871\u0026type\u003dmember\u0026item\u003d198140244\u0026trk\u003dEML_anet_mc_pst_ttle\thttps://petitions.whitehouse.gov/petition/immediately-address-issue-gun-control-through-introduction-legislation-congress/2tgcXzQC\t1356995462\tWA\t47.715698000000003\t-122.30100299999999\tSeattle\tAmerica/Los_Angeles\t1355980272\ten-US\nMozilla/5.0 (iPad; U; CPU OS 4_2_1 like Mac OS X; pt-br) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/8C148 Twitter for iPad\tBR\t1\t10sGgGU\tVUas6m\tnasatwitter\tbit.ly\thttp://t.co/0NoHYs9t\thttp://www.nasa.gov/mission_pages/station/expeditions/expedition34/newyear.html\t1356995465\t23\t-29.633300999999999\t-53.25\tAgudo\tAmerica/Sao_Paulo\t1356983161\tpt-br\nMozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11\tUS\t0\tZP35Wt\tZP35Wt\tbitly\t1.usa.gov\tdirect\thttp://paul.house.gov/index.php?option\u003dcom_content\u0026view\u003darticle\u0026id\u003d2038:new-years-resolutions-for-congress\u0026catid\u003d64:2012-texas-straight-talk\u0026Itemid\u003d69\t1356995466\tCA\t38.188499\t-121.732101\tRio Vista\tAmerica/Los_Angeles\t1356963454\ten-US,en;q\u003d0.8\nMozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B206\tRU\t1\t10sGgGU\tVUas6m\tnasatwitter\tgo.nasa.gov\thttp://t.co/0NoHYs9t\thttp://www.nasa.gov/mission_pages/station/expeditions/expedition34/newyear.html\t1356995474\t66\t59.894401999999999\t30.264199999999999\tSaint Petersburg\tEurope/Moscow\t1356983161\tru\nMozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2\tUS\t0\tKi9JZY\tKi9JZX\tflitardo\t1.usa.gov\thttp://www.miami-airport.com/bus_and_rail_info.asp\thttp://www.miamidade.gov/transit/airport-connection-faq.asp\t1356995475\tNC\t35.791499999999999\t-78.781097000000003\tCary\tAmerica/New_York\t1337869782\ten-us\nMozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729)\tUS\t0\tP3TWPb\tP3TWPa\ttwipple\t1.usa.gov\tdirect\thttps://petitions.whitehouse.gov/petition/persuade-south-korea-rok-accept-japan039s-proposal-territorial-dispute-over-islets/nYLwNzMB#thank-you\u003dp\t1356995479\tCO\t39.784999999999997\t-104.941498\tDenver\tAmerica/Denver\t1347098339\t\n"
+      },
+      "dateCreated": "Oct 4, 2016 6:42:53 PM",
+      "dateStarted": "Oct 4, 2016 9:17:12 PM",
+      "dateFinished": "Oct 4, 2016 9:17:12 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -315,9 +495,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "title": "Query PXF-HCatalog Table",
+      "title": "Query Hive Table via PXF HCatalog Integration",
       "text": "%psql.sql\nselect * from hcatalog.bigbench.customer limit 10;",
-      "dateUpdated": "Oct 4, 2016 4:24:19 AM",
+      "dateUpdated": "Oct 4, 2016 8:55:55 PM",
       "config": {
         "colWidth": 11.0,
         "graph": {
@@ -351,9 +531,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "title": "HAWQ DDL for Internal Tables",
+      "title": "Create HAWQ Internal Tables",
       "text": "%sh\n\npsql -h pxfdemo-001 -U gpadmin -d bigbench -f ../scripts/hawq-hive.ddl\n\n\n\n\n\n",
-      "dateUpdated": "Oct 4, 2016 4:32:06 AM",
+      "dateUpdated": "Oct 4, 2016 8:56:06 PM",
       "config": {
         "colWidth": 5.0,
         "graph": {
@@ -400,9 +580,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "title": "Load HAWQ Tables with Data from Hive",
+      "title": "Load HAWQ Tables with Data from Hive via PXF",
       "text": "%psql.sql\n\ninsert into hawq.customer (select * from hcatalog.bigbench.customer);\ninsert into hawq.customer_address (select * from hcatalog.bigbench.customer_address);\ninsert into hawq.customer_demographics (select * from hcatalog.bigbench.customer_demographics);\n",
-      "dateUpdated": "Oct 4, 2016 4:30:43 AM",
+      "dateUpdated": "Oct 4, 2016 8:56:13 PM",
       "config": {
         "colWidth": 6.0,
         "graph": {
@@ -468,41 +648,6 @@
       "dateCreated": "Oct 4, 2016 4:10:34 AM",
       "dateStarted": "Oct 4, 2016 4:11:59 AM",
       "dateFinished": "Oct 4, 2016 4:11:59 AM",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%psql.sql\n\nDROP EXTERNAL TABLE IF EXISTS hbase.customer;\nCREATE EXTERNAL TABLE hbase.customer\n(\n    -- customer_id integer,\n    recordkey integer,\n    \"cf1:first_name\" TEXT,\n    \"cf1:last_name\" TEXT,\n    \"cf1:gender\" character(1)\n)\nLOCATION (\u0027pxf://pxfdemo-002.c.marketing-dbaskette.internal:51200/customers_dim?Profile\u003dHBase\u0027)\nFORMAT \u0027CUSTOM\u0027 (formatter\u003d\u0027pxfwritable_import\u0027);",
-      "dateUpdated": "Oct 4, 2016 6:41:11 PM",
-      "config": {
-        "colWidth": 11.0,
-        "graph": {
-          "mode": "table",
-          "height": 300.0,
-          "optionOpen": false,
-          "keys": [],
-          "values": [],
-          "groups": [],
-          "scatter": {}
-        },
-        "enabled": true,
-        "editorMode": "ace/mode/sql",
-        "tableHide": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "jobName": "paragraph_1475529747227_693206180",
-      "id": "20161003-212227_1483801228",
-      "result": {
-        "code": "SUCCESS",
-        "type": "TABLE",
-        "msg": "Update Count\n0\n"
-      },
-      "dateCreated": "Oct 3, 2016 9:22:27 AM",
-      "dateStarted": "Oct 4, 2016 6:41:12 PM",
-      "dateFinished": "Oct 4, 2016 6:41:12 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
@@ -903,42 +1048,19 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "title": "SQL Join with a HAWQ Table +  HCatalog Table + HBase Table",
+      "title": "SQL Join with a HAWQ Table +  Hive Table + HBase Table",
       "text": "%psql.sql\nselect c.c_first_name,c.c_last_name,ca.ca_city,ca.ca_state,cd.\"cf1:cd_gender\",cd.\"cf1:cd_marital_status\" from hawq.customer c, hcatalog.bigbench.customer_address ca, hbase.customer_demographics cd where c.c_customer_sk\u003dcd.recordKey and c.c_customer_sk\u003dca.ca_address_sk limit 10;\n",
-      "dateUpdated": "Oct 4, 2016 5:31:42 AM",
+      "dateUpdated": "Oct 4, 2016 9:07:15 PM",
       "config": {
         "colWidth": 11.0,
         "graph": {
           "mode": "table",
           "height": 300.0,
           "optionOpen": false,
-          "keys": [
-            {
-              "name": "c_customer_sk",
-              "index": 0.0,
-              "aggr": "sum"
-            }
-          ],
-          "values": [
-            {
-              "name": "c_customer_id",
-              "index": 1.0,
-              "aggr": "sum"
-            }
-          ],
+          "keys": [],
+          "values": [],
           "groups": [],
-          "scatter": {
-            "xAxis": {
-              "name": "c_customer_sk",
-              "index": 0.0,
-              "aggr": "sum"
-            },
-            "yAxis": {
-              "name": "c_customer_id",
-              "index": 1.0,
-              "aggr": "sum"
-            }
-          }
+          "scatter": {}
         },
         "enabled": true,
         "title": true,
@@ -962,8 +1084,42 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "%psql.sql\n\nselect c.c_first_name,c.c_last_name,ca.ca_city,ca.ca_state,jc.\"ll[0]\",jc.\"ll[0]\",cd.\"cf1:cd_gender\",cd.\"cf1:cd_marital_status\" from hawq.customer c, hcatalog.bigbench.customer_address ca, hbase.customer_demographics cd,json.clickstream jc where c.c_customer_sk\u003dcd.recordKey and c.c_customer_sk\u003dca.ca_address_sk and ca.ca_city\u003djc.cy and ca.ca_state\u003djc.gr limit 10;\n",
+      "dateUpdated": "Oct 4, 2016 9:22:29 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475602989802_1471891842",
+      "id": "20161004-174309_195555188",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "c_first_name\tc_last_name\tca_city\tca_state\tll[0]\tll[0]\tcf1:cd_gender\tcf1:cd_marital_status\nJohn\tStout\tSalem\tWV\t39.290999999999997\t39.290999999999997\tM\tW\nJohn\tStout\tSalem\tWV\t39.290999999999997\t39.290999999999997\tM\tW\nDaniel\tCoates\tHuntsville\tAL\t34.730400000000003\t34.730400000000003\tF\tU\nDaniel\tCoates\tHuntsville\tAL\t34.562199\t34.562199\tF\tU\nMichael\tIsbell\tHuntsville\tAL\t34.730400000000003\t34.730400000000003\tF\tU\nMichael\tIsbell\tHuntsville\tAL\t34.562199\t34.562199\tF\tU\nRebecca\tRowe\tSpringfield\tVA\t38.743800999999998\t38.743800999999998\tF\tD\nMichael\tJohnson\tEvansville\tMN\t46.011299000000001\t46.011299000000001\tF\tW\nKathleen\tCunningham\tSpringfield\tVA\t38.743800999999998\t38.743800999999998\tM\tU\nRobert\tTodd\tProvidence\tRI\t41.786098000000003\t41.786098000000003\tF\tM\n"
+      },
+      "dateCreated": "Oct 4, 2016 5:43:09 AM",
+      "dateStarted": "Oct 4, 2016 9:22:16 PM",
+      "dateFinished": "Oct 4, 2016 9:22:40 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "",
-      "dateUpdated": "Oct 4, 2016 5:43:20 AM",
+      "dateUpdated": "Oct 4, 2016 9:22:03 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -981,9 +1137,9 @@
         "params": {},
         "forms": {}
       },
-      "jobName": "paragraph_1475602989802_1471891842",
-      "id": "20161004-174309_195555188",
-      "dateCreated": "Oct 4, 2016 5:43:09 AM",
+      "jobName": "paragraph_1475616113431_834804248",
+      "id": "20161004-212153_116113710",
+      "dateCreated": "Oct 4, 2016 9:21:53 PM",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
