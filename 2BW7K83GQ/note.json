@@ -1,0 +1,927 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(\"%html \u003ch3\u003e\u003ccenter\u003eWorking with PXF and External Data\u003c/h3\u003e\")\nprint(\"\u003ch4\u003e\u003ccenter\u003eHAWQ Extension Framework (PXF) is an extensible framework that allows HAWQ to query external system data. PXF includes built-in connectors for accessing data inside HDFS files, Hive tables, and HBase tables. PXF also integrates with HCatalog to query Hive tables directly.\u003c/h4\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003dhttps://github.com/dbbaskette/zeppelin-notebooks/blob/master/images/pxf-arch.png?raw\u003dtrue\u0027  style\u003d\u0027width:800px;\u0027/\u003e\")",
+      "dateUpdated": "Oct 4, 2016 5:59:41 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475603088420_8027902",
+      "id": "20161004-174448_2008264103",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003e\u003ccenter\u003eWorking with PXF and External Data\u003c/h3\u003e\u003ch4\u003e\u003ccenter\u003eHAWQ Extension Framework (PXF) is an extensible framework that allows HAWQ to query external system data. PXF includes built-in connectors for accessing data inside HDFS files, Hive tables, and HBase tables. PXF also integrates with HCatalog to query Hive tables directly.\u003c/h4\u003e\u003ccenter\u003e\u003cimg src\u003dhttps://github.com/dbbaskette/zeppelin-notebooks/blob/master/images/pxf-arch.png?raw\u003dtrue\u0027  style\u003d\u0027width:800px;\u0027/\u003e"
+      },
+      "dateCreated": "Oct 4, 2016 5:44:48 PM",
+      "dateStarted": "Oct 4, 2016 5:58:59 PM",
+      "dateFinished": "Oct 4, 2016 5:59:00 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ch3\u003e\u003ccenter\u003eUsing PXF to Query CSV and JSON\u003c/h3\u003e\")\nprint(\"\u003ccenter\u003e\u003ctable style\u003d\u0027width:20%\u0027\u003e \u003ctr\u003e \u003cth\u003e\u003cimg src\u003d\u0027http://www.clker.com/cliparts/b/8/8/2/1369900380534177305csv_file-md.png\u0027  style\u003d\u0027width:170px;\u0027/\u003e\u003c/th\u003e\u003cth\u003e\u003cimg src\u003d\u0027http://itecsoftware.com/wp-content/uploads/2009/09/json-extension-linux-300x200.jpg\u0027  style\u003d\u0027width:300px;\u0027/\u003e\u003c/th\u003e \u003c/tr\u003e\u003c/table\u003e\")\n",
+      "dateUpdated": "Oct 4, 2016 6:12:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475603097451_1026858314",
+      "id": "20161004-174457_216365946",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003e\u003ccenter\u003eUsing PXF to Query CSV and JSON\u003c/h3\u003e\u003ccenter\u003e\u003ctable style\u003d\u0027width:20%\u0027\u003e \u003ctr\u003e \u003cth\u003e\u003cimg src\u003d\u0027http://www.clker.com/cliparts/b/8/8/2/1369900380534177305csv_file-md.png\u0027  style\u003d\u0027width:170px;\u0027/\u003e\u003c/th\u003e\u003cth\u003e\u003cimg src\u003d\u0027http://itecsoftware.com/wp-content/uploads/2009/09/json-extension-linux-300x200.jpg\u0027  style\u003d\u0027width:300px;\u0027/\u003e\u003c/th\u003e \u003c/tr\u003e\u003c/table\u003e"
+      },
+      "dateCreated": "Oct 4, 2016 5:44:57 PM",
+      "dateStarted": "Oct 4, 2016 6:11:55 PM",
+      "dateFinished": "Oct 4, 2016 6:11:55 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "dateUpdated": "Oct 4, 2016 5:45:08 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475603094762_-1899187720",
+      "id": "20161004-174454_1898178871",
+      "dateCreated": "Oct 4, 2016 5:44:54 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ch3\u003e\u003ccenter\u003eUsing PXF and HCatalog to Query Hive\u003c/h3\u003e\")\nprint(\"\u003ch5\u003e\u003ccenter\u003eHive tables can be queried directly through HCatalog integration with HAWQ and PXF, regardless of the underlying file storage format\u003c/h5\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003d\u0027https://upload.wikimedia.org/wikipedia/commons/b/bb/Apache_Hive_logo.svg\u0027  style\u003d\u0027width:200px;\u0027/\u003e\")",
+      "dateUpdated": "Oct 4, 2016 6:11:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475521198274_1238890523",
+      "id": "20161003-185958_1479308832",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003e\u003ccenter\u003eUsing PXF and HCatalog to Query Hive\u003c/h3\u003e\u003ch5\u003e\u003ccenter\u003eHive tables can be queried directly through HCatalog integration with HAWQ and PXF, regardless of the underlying file storage format\u003c/h5\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://upload.wikimedia.org/wikipedia/commons/b/bb/Apache_Hive_logo.svg\u0027  style\u003d\u0027width:200px;\u0027/\u003e"
+      },
+      "dateCreated": "Oct 3, 2016 6:59:58 AM",
+      "dateStarted": "Oct 4, 2016 4:13:37 PM",
+      "dateFinished": "Oct 4, 2016 4:13:37 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive\nshow tables",
+      "dateUpdated": "Oct 4, 2016 4:38:47 PM",
+      "config": {
+        "colWidth": 4.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "tab_name",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "tab_name",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475520515099_1078267986",
+      "id": "20161003-184835_272129512",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "tab_name\ncustomer\ncustomer_address\ncustomer_demographics\ndate_dim\nhousehold_demographics\nincome_band\ninventory\nitem\nitem_marketprices\nproduct_reviews\npromotion\nq01_hive_power_test_0_result\nq02_hive_power_test_0_result\nq02_hive_power_test_0_temp\nreason\nship_mode\nstore\nstore_returns\nstore_sales\ntime_dim\nwarehouse\nweb_clickstreams\nweb_page\nweb_returns\nweb_sales\nweb_site\n"
+      },
+      "dateCreated": "Oct 3, 2016 6:48:35 AM",
+      "dateStarted": "Oct 4, 2016 4:38:47 PM",
+      "dateFinished": "Oct 4, 2016 4:38:49 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%hive\nselect * from customer limit 8",
+      "dateUpdated": "Oct 3, 2016 7:00:11 AM",
+      "config": {
+        "colWidth": 7.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "customer.c_customer_sk",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "customer.c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "customer.c_customer_sk",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "customer.c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475520848467_-1021415675",
+      "id": "20161003-185408_408779443",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "customer.c_customer_sk\tcustomer.c_customer_id\tcustomer.c_current_cdemo_sk\tcustomer.c_current_hdemo_sk\tcustomer.c_current_addr_sk\tcustomer.c_first_shipto_date_sk\tcustomer.c_first_sales_date_sk\tcustomer.c_salutation\tcustomer.c_first_name\tcustomer.c_last_name\tcustomer.c_preferred_cust_flag\tcustomer.c_birth_day\tcustomer.c_birth_month\tcustomer.c_birth_year\tcustomer.c_birth_country\tcustomer.c_login\tcustomer.c_email_address\tcustomer.c_last_review_date\n0\tAAAAAAAAAAAAAAAA\t1824793\t3203\t8082\t28776\t14690\tMs.\tMarisa\tHarrington\tN\t17\t4\t1988\tUNITED ARAB EMIRATES\tRRCyuY3XfE3a\tMarisa.Harrington@lawyer.com\tgdMmGdU9\n1\tAAAAAAAAAAAAAAAB\t830976\t2600\t29067\t94658\t19931\tMiss\tBessie\tCalderon\tN\t20\t10\t1945\tMONACO\taCJb9cc\tBessie.Calderon@snail-mail.net\thLQn0LtVa\n2\tAAAAAAAAAAAAAAAC\t335540\t5527\t44562\t31783\t106195\tMiss\tBarbara\tHoover\tY\t3\t4\t1952\tGREENLAND\t59cfL9Fbpv\tBarbara.Hoover@lawyer.com\tvDVbSOCI\n3\tAAAAAAAAAAAAAAAD\t1056662\t1978\t60471\t8741\t87583\tMr.\tLanny\tBerg\tN\t2\t1\t1932\tCANADA\tTvsKkZgPt\tLanny.Berg@gmx.fr\tZxCh4LKH\n4\tAAAAAAAAAAAAAAAE\t596707\t3971\t69558\t14688\t75952\tMrs.\tGina\tFelix\tY\t18\t4\t1959\tNAURU\tt3r2t4rC\tGina.Felix@amplimail.com\tWpJjJ1\n5\tAAAAAAAAAAAAAAAF\t363428\t4888\t67269\t38182\t65826\tDr.\tJudith\tMccain\tN\t11\t10\t1936\tICELAND\tWfT\tJudith.Mccain@privacyharbor.com\tjXmMzRt8\n6\tAAAAAAAAAAAAAAAG\t1601629\t6779\t59377\t48020\t75950\tSir\tLavern\tGuzman\tN\t2\t7\t1952\tGUAM\tSD7IbZaQ\tLavern.Guzman@peacemail.com\txKpEnQ\n7\tAAAAAAAAAAAAAAAH\t260357\t2400\t96733\t20361\t42197\tDr.\tJanice\tMurray\tY\t23\t8\t1976\tLITHUANIA\tp1FXddH8rW\tJanice.Murray@mac.hush.com\txhjGNk98a\n"
+      },
+      "dateCreated": "Oct 3, 2016 6:54:08 AM",
+      "dateStarted": "Oct 3, 2016 6:59:58 AM",
+      "dateFinished": "Oct 3, 2016 6:59:59 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Query PXF-HCatalog Table",
+      "text": "%psql.sql\nselect * from hcatalog.bigbench.customer limit 10;",
+      "dateUpdated": "Oct 4, 2016 4:24:19 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475521233393_-723066712",
+      "id": "20161003-190033_615257423",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "c_customer_sk\tc_customer_id\tc_current_cdemo_sk\tc_current_hdemo_sk\tc_current_addr_sk\tc_first_shipto_date_sk\tc_first_sales_date_sk\tc_salutation\tc_first_name\tc_last_name\tc_preferred_cust_flag\tc_birth_day\tc_birth_month\tc_birth_year\tc_birth_country\tc_login\tc_email_address\tc_last_review_date\n0\tAAAAAAAAAAAAAAAA\t1824793\t3203\t8082\t28776\t14690\tMs.\tMarisa\tHarrington\tN\t17\t4\t1988\tUNITED ARAB EMIRATES\tRRCyuY3XfE3a\tMarisa.Harrington@lawyer.com\tgdMmGdU9\n1\tAAAAAAAAAAAAAAAB\t830976\t2600\t29067\t94658\t19931\tMiss\tBessie\tCalderon\tN\t20\t10\t1945\tMONACO\taCJb9cc\tBessie.Calderon@snail-mail.net\thLQn0LtVa\n2\tAAAAAAAAAAAAAAAC\t335540\t5527\t44562\t31783\t106195\tMiss\tBarbara\tHoover\tY\t3\t4\t1952\tGREENLAND\t59cfL9Fbpv\tBarbara.Hoover@lawyer.com\tvDVbSOCI\n3\tAAAAAAAAAAAAAAAD\t1056662\t1978\t60471\t8741\t87583\tMr.\tLanny\tBerg\tN\t2\t1\t1932\tCANADA\tTvsKkZgPt\tLanny.Berg@gmx.fr\tZxCh4LKH\n4\tAAAAAAAAAAAAAAAE\t596707\t3971\t69558\t14688\t75952\tMrs.\tGina\tFelix\tY\t18\t4\t1959\tNAURU\tt3r2t4rC\tGina.Felix@amplimail.com\tWpJjJ1\n5\tAAAAAAAAAAAAAAAF\t363428\t4888\t67269\t38182\t65826\tDr.\tJudith\tMccain\tN\t11\t10\t1936\tICELAND\tWfT\tJudith.Mccain@privacyharbor.com\tjXmMzRt8\n6\tAAAAAAAAAAAAAAAG\t1601629\t6779\t59377\t48020\t75950\tSir\tLavern\tGuzman\tN\t2\t7\t1952\tGUAM\tSD7IbZaQ\tLavern.Guzman@peacemail.com\txKpEnQ\n7\tAAAAAAAAAAAAAAAH\t260357\t2400\t96733\t20361\t42197\tDr.\tJanice\tMurray\tY\t23\t8\t1976\tLITHUANIA\tp1FXddH8rW\tJanice.Murray@mac.hush.com\txhjGNk98a\n8\tAAAAAAAAAAAAAAAI\t1519111\t1818\t72851\t39194\t62551\tMr.\tLee\tJenkins\tN\t15\t12\t1972\tTUNISIA\ts2Ef\tLee.Jenkins@hushmail.me\tj\n9\tAAAAAAAAAAAAAAAJ\t555297\t5958\t97447\t43531\t50147\tMr.\tJonathan\tParker\tY\t10\t2\t1976\tGEORGIA\tN2Qq55\tJonathan.Parker@mail.com\tvgudeV\n"
+      },
+      "dateCreated": "Oct 3, 2016 7:00:33 AM",
+      "dateStarted": "Oct 4, 2016 4:24:19 PM",
+      "dateFinished": "Oct 4, 2016 4:24:20 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "HAWQ DDL for Internal Tables",
+      "text": "%sh\n\npsql -h pxfdemo-001 -U gpadmin -d bigbench -f ../scripts/hawq-hive.ddl\n\n\n\n\n\n",
+      "dateUpdated": "Oct 4, 2016 4:32:06 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sh",
+        "tableHide": false,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475522155142_1409109357",
+      "id": "20161003-191555_289526154",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "psql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.product_reviews\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_clickstreams\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.item_marketprices\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_7_check on append only parquet table hawq.web_returns_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_6_check on append only parquet table hawq.web_returns_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_5_check on append only parquet table hawq.web_returns_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_4_check on append only parquet table hawq.web_returns_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_3_check on append only parquet table hawq.web_returns_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_returns_1_prt_2_check on append only parquet table hawq.web_returns_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns_1_prt_others\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_returns\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_56\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_56_check on append only parquet table hawq.web_sales_1_prt_56\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_55\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_55_check on append only parquet table hawq.web_sales_1_prt_55\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_54\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_54_check on append only parquet table hawq.web_sales_1_prt_54\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_53\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_53_check on append only parquet table hawq.web_sales_1_prt_53\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_52\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_52_check on append only parquet table hawq.web_sales_1_prt_52\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_51\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_51_check on append only parquet table hawq.web_sales_1_prt_51\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_50\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_50_check on append only parquet table hawq.web_sales_1_prt_50\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_49\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_49_check on append only parquet table hawq.web_sales_1_prt_49\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_48\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_48_check on append only parquet table hawq.web_sales_1_prt_48\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_47\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_47_check on append only parquet table hawq.web_sales_1_prt_47\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_46\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_46_check on append only parquet table hawq.web_sales_1_prt_46\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_45\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_45_check on append only parquet table hawq.web_sales_1_prt_45\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_44\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_44_check on append only parquet table hawq.web_sales_1_prt_44\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_43\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_43_check on append only parquet table hawq.web_sales_1_prt_43\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_42\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_42_check on append only parquet table hawq.web_sales_1_prt_42\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_41\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_41_check on append only parquet table hawq.web_sales_1_prt_41\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_40\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_40_check on append only parquet table hawq.web_sales_1_prt_40\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_39\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_39_check on append only parquet table hawq.web_sales_1_prt_39\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_38\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_38_check on append only parquet table hawq.web_sales_1_prt_38\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_37\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_37_check on append only parquet table hawq.web_sales_1_prt_37\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_36\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_36_check on append only parquet table hawq.web_sales_1_prt_36\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_35\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_35_check on append only parquet table hawq.web_sales_1_prt_35\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_34\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_34_check on append only parquet table hawq.web_sales_1_prt_34\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_33\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_33_check on append only parquet table hawq.web_sales_1_prt_33\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_32\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_32_check on append only parquet table hawq.web_sales_1_prt_32\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_31\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_31_check on append only parquet table hawq.web_sales_1_prt_31\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_30\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_30_check on append only parquet table hawq.web_sales_1_prt_30\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_29\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_29_check on append only parquet table hawq.web_sales_1_prt_29\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_28\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_28_check on append only parquet table hawq.web_sales_1_prt_28\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_27\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_27_check on append only parquet table hawq.web_sales_1_prt_27\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_26\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_26_check on append only parquet table hawq.web_sales_1_prt_26\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_25\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_25_check on append only parquet table hawq.web_sales_1_prt_25\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_24\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_24_check on append only parquet table hawq.web_sales_1_prt_24\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_23_check on append only parquet table hawq.web_sales_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_22_check on append only parquet table hawq.web_sales_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_21_check on append only parquet table hawq.web_sales_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_20_check on append only parquet table hawq.web_sales_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_19_check on append only parquet table hawq.web_sales_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_18_check on append only parquet table hawq.web_sales_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_17_check on append only parquet table hawq.web_sales_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_16_check on append only parquet table hawq.web_sales_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_15_check on append only parquet table hawq.web_sales_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_14_check on append only parquet table hawq.web_sales_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_13_check on append only parquet table hawq.web_sales_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_12_check on append only parquet table hawq.web_sales_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_11_check on append only parquet table hawq.web_sales_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_10_check on append only parquet table hawq.web_sales_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_9_check on append only parquet table hawq.web_sales_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_8_check on append only parquet table hawq.web_sales_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_7_check on append only parquet table hawq.web_sales_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_6_check on append only parquet table hawq.web_sales_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_5_check on append only parquet table hawq.web_sales_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_4_check on append only parquet table hawq.web_sales_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_3_check on append only parquet table hawq.web_sales_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint web_sales_1_prt_2_check on append only parquet table hawq.web_sales_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales_1_prt_others\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_sales\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_23_check on append only parquet table hawq.store_returns_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_22_check on append only parquet table hawq.store_returns_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_21_check on append only parquet table hawq.store_returns_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_20_check on append only parquet table hawq.store_returns_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_19_check on append only parquet table hawq.store_returns_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_18_check on append only parquet table hawq.store_returns_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_17_check on append only parquet table hawq.store_returns_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_16_check on append only parquet table hawq.store_returns_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_15_check on append only parquet table hawq.store_returns_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_14_check on append only parquet table hawq.store_returns_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_13_check on append only parquet table hawq.store_returns_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_12_check on append only parquet table hawq.store_returns_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_11_check on append only parquet table hawq.store_returns_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_10_check on append only parquet table hawq.store_returns_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_9_check on append only parquet table hawq.store_returns_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_8_check on append only parquet table hawq.store_returns_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_7_check on append only parquet table hawq.store_returns_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_6_check on append only parquet table hawq.store_returns_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_5_check on append only parquet table hawq.store_returns_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_4_check on append only parquet table hawq.store_returns_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_3_check on append only parquet table hawq.store_returns_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_returns_1_prt_2_check on append only parquet table hawq.store_returns_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns_1_prt_others\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_returns\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_111\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_111_check on append only parquet table hawq.store_sales_1_prt_111\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_110\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_110_check on append only parquet table hawq.store_sales_1_prt_110\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_109\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_109_check on append only parquet table hawq.store_sales_1_prt_109\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_108\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_108_check on append only parquet table hawq.store_sales_1_prt_108\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_107\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_107_check on append only parquet table hawq.store_sales_1_prt_107\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_106\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_106_check on append only parquet table hawq.store_sales_1_prt_106\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_105\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_105_check on append only parquet table hawq.store_sales_1_prt_105\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_104\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_104_check on append only parquet table hawq.store_sales_1_prt_104\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_103\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_103_check on append only parquet table hawq.store_sales_1_prt_103\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_102\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_102_check on append only parquet table hawq.store_sales_1_prt_102\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_101\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_101_check on append only parquet table hawq.store_sales_1_prt_101\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_100\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_100_check on append only parquet table hawq.store_sales_1_prt_100\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_99\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_99_check on append only parquet table hawq.store_sales_1_prt_99\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_98\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_98_check on append only parquet table hawq.store_sales_1_prt_98\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_97\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_97_check on append only parquet table hawq.store_sales_1_prt_97\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_96\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_96_check on append only parquet table hawq.store_sales_1_prt_96\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_95\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_95_check on append only parquet table hawq.store_sales_1_prt_95\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_94\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_94_check on append only parquet table hawq.store_sales_1_prt_94\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_93\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_93_check on append only parquet table hawq.store_sales_1_prt_93\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_92\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_92_check on append only parquet table hawq.store_sales_1_prt_92\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_91\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_91_check on append only parquet table hawq.store_sales_1_prt_91\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_90\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_90_check on append only parquet table hawq.store_sales_1_prt_90\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_89\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_89_check on append only parquet table hawq.store_sales_1_prt_89\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_88\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_88_check on append only parquet table hawq.store_sales_1_prt_88\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_87\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_87_check on append only parquet table hawq.store_sales_1_prt_87\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_86\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_86_check on append only parquet table hawq.store_sales_1_prt_86\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_85\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_85_check on append only parquet table hawq.store_sales_1_prt_85\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_84\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_84_check on append only parquet table hawq.store_sales_1_prt_84\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_83\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_83_check on append only parquet table hawq.store_sales_1_prt_83\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_82\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_82_check on append only parquet table hawq.store_sales_1_prt_82\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_81\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_81_check on append only parquet table hawq.store_sales_1_prt_81\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_80\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_80_check on append only parquet table hawq.store_sales_1_prt_80\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_79\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_79_check on append only parquet table hawq.store_sales_1_prt_79\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_78\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_78_check on append only parquet table hawq.store_sales_1_prt_78\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_77\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_77_check on append only parquet table hawq.store_sales_1_prt_77\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_76\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_76_check on append only parquet table hawq.store_sales_1_prt_76\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_75\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_75_check on append only parquet table hawq.store_sales_1_prt_75\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_74\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_74_check on append only parquet table hawq.store_sales_1_prt_74\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_73\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_73_check on append only parquet table hawq.store_sales_1_prt_73\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_72\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_72_check on append only parquet table hawq.store_sales_1_prt_72\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_71\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_71_check on append only parquet table hawq.store_sales_1_prt_71\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_70\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_70_check on append only parquet table hawq.store_sales_1_prt_70\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_69\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_69_check on append only parquet table hawq.store_sales_1_prt_69\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_68\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_68_check on append only parquet table hawq.store_sales_1_prt_68\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_67\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_67_check on append only parquet table hawq.store_sales_1_prt_67\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_66\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_66_check on append only parquet table hawq.store_sales_1_prt_66\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_65\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_65_check on append only parquet table hawq.store_sales_1_prt_65\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_64\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_64_check on append only parquet table hawq.store_sales_1_prt_64\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_63\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_63_check on append only parquet table hawq.store_sales_1_prt_63\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_62\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_62_check on append only parquet table hawq.store_sales_1_prt_62\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_61\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_61_check on append only parquet table hawq.store_sales_1_prt_61\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_60\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_60_check on append only parquet table hawq.store_sales_1_prt_60\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_59\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_59_check on append only parquet table hawq.store_sales_1_prt_59\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_58\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_58_check on append only parquet table hawq.store_sales_1_prt_58\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_57\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_57_check on append only parquet table hawq.store_sales_1_prt_57\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_56\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_56_check on append only parquet table hawq.store_sales_1_prt_56\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_55\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_55_check on append only parquet table hawq.store_sales_1_prt_55\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_54\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_54_check on append only parquet table hawq.store_sales_1_prt_54\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_53\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_53_check on append only parquet table hawq.store_sales_1_prt_53\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_52\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_52_check on append only parquet table hawq.store_sales_1_prt_52\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_51\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_51_check on append only parquet table hawq.store_sales_1_prt_51\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_50\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_50_check on append only parquet table hawq.store_sales_1_prt_50\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_49\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_49_check on append only parquet table hawq.store_sales_1_prt_49\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_48\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_48_check on append only parquet table hawq.store_sales_1_prt_48\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_47\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_47_check on append only parquet table hawq.store_sales_1_prt_47\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_46\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_46_check on append only parquet table hawq.store_sales_1_prt_46\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_45\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_45_check on append only parquet table hawq.store_sales_1_prt_45\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_44\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_44_check on append only parquet table hawq.store_sales_1_prt_44\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_43\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_43_check on append only parquet table hawq.store_sales_1_prt_43\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_42\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_42_check on append only parquet table hawq.store_sales_1_prt_42\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_41\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_41_check on append only parquet table hawq.store_sales_1_prt_41\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_40\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_40_check on append only parquet table hawq.store_sales_1_prt_40\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_39\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_39_check on append only parquet table hawq.store_sales_1_prt_39\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_38\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_38_check on append only parquet table hawq.store_sales_1_prt_38\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_37\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_37_check on append only parquet table hawq.store_sales_1_prt_37\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_36\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_36_check on append only parquet table hawq.store_sales_1_prt_36\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_35\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_35_check on append only parquet table hawq.store_sales_1_prt_35\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_34\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_34_check on append only parquet table hawq.store_sales_1_prt_34\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_33\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_33_check on append only parquet table hawq.store_sales_1_prt_33\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_32\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_32_check on append only parquet table hawq.store_sales_1_prt_32\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_31\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_31_check on append only parquet table hawq.store_sales_1_prt_31\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_30\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_30_check on append only parquet table hawq.store_sales_1_prt_30\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_29\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_29_check on append only parquet table hawq.store_sales_1_prt_29\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_28\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_28_check on append only parquet table hawq.store_sales_1_prt_28\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_27\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_27_check on append only parquet table hawq.store_sales_1_prt_27\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_26\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_26_check on append only parquet table hawq.store_sales_1_prt_26\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_25\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_25_check on append only parquet table hawq.store_sales_1_prt_25\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_24\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_24_check on append only parquet table hawq.store_sales_1_prt_24\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_23_check on append only parquet table hawq.store_sales_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_22_check on append only parquet table hawq.store_sales_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_21_check on append only parquet table hawq.store_sales_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_20_check on append only parquet table hawq.store_sales_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_19_check on append only parquet table hawq.store_sales_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_18_check on append only parquet table hawq.store_sales_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_17_check on append only parquet table hawq.store_sales_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_16_check on append only parquet table hawq.store_sales_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_15_check on append only parquet table hawq.store_sales_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_14_check on append only parquet table hawq.store_sales_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_13_check on append only parquet table hawq.store_sales_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_12_check on append only parquet table hawq.store_sales_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_11_check on append only parquet table hawq.store_sales_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_10_check on append only parquet table hawq.store_sales_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_9_check on append only parquet table hawq.store_sales_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_8_check on append only parquet table hawq.store_sales_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_7_check on append only parquet table hawq.store_sales_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_6_check on append only parquet table hawq.store_sales_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_5_check on append only parquet table hawq.store_sales_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_4_check on append only parquet table hawq.store_sales_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_3_check on append only parquet table hawq.store_sales_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint store_sales_1_prt_2_check on append only parquet table hawq.store_sales_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales_1_prt_others\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store_sales\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_23_check on append only parquet table hawq.inventory_1_prt_23\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_22_check on append only parquet table hawq.inventory_1_prt_22\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_21_check on append only parquet table hawq.inventory_1_prt_21\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_20_check on append only parquet table hawq.inventory_1_prt_20\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_19_check on append only parquet table hawq.inventory_1_prt_19\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_18_check on append only parquet table hawq.inventory_1_prt_18\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_17_check on append only parquet table hawq.inventory_1_prt_17\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_16_check on append only parquet table hawq.inventory_1_prt_16\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_15_check on append only parquet table hawq.inventory_1_prt_15\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_14_check on append only parquet table hawq.inventory_1_prt_14\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_13_check on append only parquet table hawq.inventory_1_prt_13\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_12_check on append only parquet table hawq.inventory_1_prt_12\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_11_check on append only parquet table hawq.inventory_1_prt_11\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_10_check on append only parquet table hawq.inventory_1_prt_10\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_9_check on append only parquet table hawq.inventory_1_prt_9\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_8_check on append only parquet table hawq.inventory_1_prt_8\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_7_check on append only parquet table hawq.inventory_1_prt_7\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_6_check on append only parquet table hawq.inventory_1_prt_6\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_5_check on append only parquet table hawq.inventory_1_prt_5\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_4_check on append only parquet table hawq.inventory_1_prt_4\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_3_check on append only parquet table hawq.inventory_1_prt_3\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to constraint inventory_1_prt_2_check on append only parquet table hawq.inventory_1_prt_2\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory_1_prt_others\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.inventory\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_page\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.web_site\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.warehouse\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.time_dim\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.store\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.ship_mode\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.reason\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.promotion\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.item\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.income_band\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.household_demographics\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.date_dim\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.customer_demographics\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.customer_address\npsql:../scripts/hawq-hive.ddl:1: NOTICE:  drop cascades to append only parquet table hawq.customer\nDROP SCHEMA\nCREATE SCHEMA\npsql:../scripts/hawq-hive.ddl:4: NOTICE:  table \"customer\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:28: NOTICE:  table \"customer_address\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:47: NOTICE:  table \"customer_demographics\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:63: NOTICE:  table \"date_dim\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:97: NOTICE:  table \"household_demographics\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:108: NOTICE:  table \"income_band\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:117: NOTICE:  table \"item\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:145: NOTICE:  table \"promotion\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:170: NOTICE:  table \"reason\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:179: NOTICE:  table \"ship_mode\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:191: NOTICE:  table \"store\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:227: NOTICE:  table \"time_dim\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:243: NOTICE:  table \"warehouse\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:263: NOTICE:  table \"web_site\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:295: NOTICE:  table \"web_page\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:315: NOTICE:  table \"inventory\" does not exist, skipping\nDROP TABLE\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_others\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_2\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_3\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_4\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_5\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_6\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_7\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_8\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_9\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_10\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_11\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_12\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_13\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_14\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_15\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_16\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_17\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_18\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_19\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_20\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_21\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_22\" for table \"inventory\"\npsql:../scripts/hawq-hive.ddl:326: NOTICE:  CREATE TABLE will create partition \"inventory_1_prt_23\" for table \"inventory\"\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:328: NOTICE:  table \"store_sales\" does not exist, skipping\nDROP TABLE\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_others\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_2\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_3\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_4\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_5\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_6\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_7\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_8\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_9\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_10\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_11\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_12\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_13\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_14\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_15\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_16\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_17\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_18\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_19\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_20\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_21\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_22\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_23\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_24\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_25\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_26\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_27\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_28\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_29\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_30\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_31\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_32\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_33\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_34\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_35\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_36\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_37\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_38\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_39\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_40\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_41\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_42\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_43\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_44\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_45\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_46\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_47\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_48\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_49\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_50\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_51\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_52\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_53\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_54\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_55\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_56\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_57\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_58\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_59\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_60\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_61\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_62\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_63\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_64\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_65\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_66\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_67\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_68\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_69\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_70\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_71\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_72\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_73\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_74\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_75\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_76\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_77\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_78\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_79\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_80\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_81\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_82\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_83\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_84\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_85\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_86\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_87\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_88\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_89\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_90\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_91\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_92\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_93\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_94\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_95\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_96\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_97\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_98\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_99\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_100\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_101\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_102\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_103\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_104\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_105\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_106\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_107\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_108\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_109\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_110\" for table \"store_sales\"\npsql:../scripts/hawq-hive.ddl:358: NOTICE:  CREATE TABLE will create partition \"store_sales_1_prt_111\" for table \"store_sales\"\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:360: NOTICE:  table \"store_returns\" does not exist, skipping\nDROP TABLE\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_others\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_2\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_3\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_4\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_5\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_6\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_7\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_8\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_9\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_10\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_11\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_12\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_13\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_14\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_15\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_16\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_17\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_18\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_19\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_20\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_21\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_22\" for table \"store_returns\"\npsql:../scripts/hawq-hive.ddl:387: NOTICE:  CREATE TABLE will create partition \"store_returns_1_prt_23\" for table \"store_returns\"\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:389: NOTICE:  table \"web_sales\" does not exist, skipping\nDROP TABLE\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_others\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_2\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_3\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_4\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_5\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_6\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_7\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_8\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_9\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_10\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_11\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_12\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_13\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_14\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_15\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_16\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_17\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_18\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_19\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_20\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_21\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_22\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_23\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_24\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_25\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_26\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_27\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_28\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_29\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_30\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_31\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_32\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_33\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_34\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_35\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_36\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_37\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_38\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_39\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_40\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_41\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_42\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_43\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_44\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_45\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_46\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_47\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_48\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_49\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_50\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_51\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_52\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_53\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_54\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_55\" for table \"web_sales\"\npsql:../scripts/hawq-hive.ddl:430: NOTICE:  CREATE TABLE will create partition \"web_sales_1_prt_56\" for table \"web_sales\"\nCREATE TABLE\nDROP TABLE\npsql:../scripts/hawq-hive.ddl:432: NOTICE:  table \"web_returns\" does not exist, skipping\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_others\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_2\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_3\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_4\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_5\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_6\" for table \"web_returns\"\npsql:../scripts/hawq-hive.ddl:463: NOTICE:  CREATE TABLE will create partition \"web_returns_1_prt_7\" for table \"web_returns\"\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:465: NOTICE:  table \"item_marketprices\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:477: NOTICE:  table \"web_clickstreams\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\npsql:../scripts/hawq-hive.ddl:489: NOTICE:  table \"product_reviews\" does not exist, skipping\nDROP TABLE\nCREATE TABLE\n"
+      },
+      "dateCreated": "Oct 3, 2016 7:15:55 AM",
+      "dateStarted": "Oct 4, 2016 4:23:23 PM",
+      "dateFinished": "Oct 4, 2016 4:23:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Load HAWQ Tables with Data from Hive",
+      "text": "%psql.sql\n\ninsert into hawq.customer (select * from hcatalog.bigbench.customer);\ninsert into hawq.customer_address (select * from hcatalog.bigbench.customer_address);\ninsert into hawq.customer_demographics (select * from hcatalog.bigbench.customer_demographics);\n",
+      "dateUpdated": "Oct 4, 2016 4:30:43 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475529327892_430826043",
+      "id": "20161003-211527_218039187",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "Update Count\n313066\n"
+      },
+      "dateCreated": "Oct 3, 2016 9:15:27 AM",
+      "dateStarted": "Oct 4, 2016 4:30:43 PM",
+      "dateFinished": "Oct 4, 2016 4:30:56 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ch3\u003e\u003ccenter\u003eUsing PXF and HBase\u003c/h3\u003e\")\nprint(\"\u003ch5\u003e\u003ccenter\u003eHBase tables can be queried directly through HAWQ and PXFt\u003c/h5\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003d\u0027http://hbase.apache.org/images/hbase_logo_with_orca_large.png\u0027  style\u003d\u0027width: 400px;\u0027/\u003e\")",
+      "dateUpdated": "Oct 4, 2016 5:41:35 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475597434196_1166445617",
+      "id": "20161004-161034_2026106923",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003e\u003ccenter\u003eUsing PXF and HBase\u003c/h3\u003e\u003ch5\u003e\u003ccenter\u003eHBase tables can be queried directly through HAWQ and PXFt\u003c/h5\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027http://hbase.apache.org/images/hbase_logo_with_orca_large.png\u0027  style\u003d\u0027width: 400px;\u0027/\u003e"
+      },
+      "dateCreated": "Oct 4, 2016 4:10:34 PM",
+      "dateStarted": "Oct 4, 2016 4:11:59 PM",
+      "dateFinished": "Oct 4, 2016 4:11:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%psql.sql\nCREATE EXTERNAL TABLE hbase.customers_dim\n    -- customer_id integer,\n    recordkey integer,\n    \"cf1:first_name\" TEXT,\n    \"cf1:last_name\" TEXT,\n    \"cf1:gender\" character(1)\n)\nLOCATION (\u0027pxf://pxfdemo-002.c.marketing-dbaskette.internal:51200/customers_dim?Profile\u003dHBase\u0027)\nFORMAT \u0027CUSTOM\u0027 (formatter\u003d\u0027pxfwritable_import\u0027);",
+      "dateUpdated": "Oct 4, 2016 3:57:04 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475529747227_693206180",
+      "id": "20161003-212227_1483801228",
+      "dateCreated": "Oct 3, 2016 9:22:27 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Show HBase Tables",
+      "text": "%hbase\nlist\n",
+      "dateUpdated": "Oct 4, 2016 4:01:27 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "tableHide": false,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475533685554_-26251314",
+      "id": "20161003-222805_1723302289",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "TABLE\ncategories_dim\ncustomer\ncustomer_addresses_dim\ncustomers_dim\nemail_addresses_dim\norder_lineitems\norders\npayment_methods\nproducts_dim\nweb_clickstreams\n10 row(s) in 0.0060 seconds\n\n"
+      },
+      "dateCreated": "Oct 3, 2016 10:28:05 AM",
+      "dateStarted": "Oct 4, 2016 3:59:16 PM",
+      "dateFinished": "Oct 4, 2016 3:59:16 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Describe HBase Table",
+      "text": "%hbase\ndescribe \u0027customer\u0027\n\n\n\n\n\n\n\n",
+      "dateUpdated": "Oct 4, 2016 4:02:47 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475596542603_1753118171",
+      "id": "20161004-155542_287839654",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "Table customer is ENABLED\ncustomer\nCOLUMN FAMILIES DESCRIPTION\n{NAME \u003d\u003e \u0027cf1\u0027, BLOOMFILTER \u003d\u003e \u0027ROW\u0027, VERSIONS \u003d\u003e \u00271\u0027, IN_MEMORY \u003d\u003e \u0027false\u0027, KEEP_DELETED_CELLS \u003d\u003e \u0027FALSE\u0027, DATA_BLOCK_ENCODING \u003d\u003e \u0027NONE\u0027, TTL \u003d\u003e \u0027FOREVER\u0027, COMPRESSION \u003d\u003e \u0027NONE\u0027, MIN_VERSIONS \u003d\u003e \u00270\u0027, BLOCKCACHE \u003d\u003e \u0027true\u0027, BLOCKSIZE \u003d\u003e \u002765536\u0027, REPLICATION_SCOPE \u003d\u003e \u00270\u0027}\n1 row(s) in 0.0280 seconds\n\n"
+      },
+      "dateCreated": "Oct 4, 2016 3:55:42 PM",
+      "dateStarted": "Oct 4, 2016 4:00:55 PM",
+      "dateFinished": "Oct 4, 2016 4:00:55 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Query HBase Table for Customer 107596",
+      "text": "%hbase\n\nget \u0027customer\u0027, \u0027107596\u0027\n\n\n",
+      "dateUpdated": "Oct 4, 2016 4:43:17 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475533507584_-16676919",
+      "id": "20161003-222507_323699050",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "COLUMN  CELL\n cf1:c_birth_country timestamp\u003d1475594503203, value\u003dMADAGASCAR\n cf1:c_birth_day timestamp\u003d1475594503203, value\u003d1\n cf1:c_birth_month timestamp\u003d1475594503203, value\u003d7\n cf1:c_birth_year timestamp\u003d1475594503203, value\u003d1991\n cf1:c_current_addr_sk timestamp\u003d1475594503203, value\u003d23970\n cf1:c_current_cbigbench_sk timestamp\u003d1475594503203, value\u003d282951\n cf1:c_current_hbigbench_sk timestamp\u003d1475594503203, value\u003d447\n cf1:c_customer_id timestamp\u003d1475594503203, value\u003dAAAAAAAAAAAAGDEI\n cf1:c_email_address timestamp\u003d1475594503203, value\u003dDennis.Coe@devils.com\n cf1:c_first_name timestamp\u003d1475594503203, value\u003dDennis\n cf1:c_first_sales_date_sk timestamp\u003d1475594503203, value\u003d101378\n cf1:c_first_shipto_date_sk timestamp\u003d1475594503203, value\u003d26694\n cf1:c_last_name timestamp\u003d1475594503203, value\u003dCoe\n cf1:c_last_review_date timestamp\u003d1475594503203, value\u003dzKidT8\n cf1:c_login timestamp\u003d1475594503203, value\u003dlV1dHCz93U\n cf1:c_preferred_cust_flag timestamp\u003d1475594503203, value\u003dN\n cf1:c_salutation timestamp\u003d1475594503203, value\u003dDr.\n17 row(s) in 0.0130 seconds\n\n"
+      },
+      "dateCreated": "Oct 3, 2016 10:25:07 AM",
+      "dateStarted": "Oct 4, 2016 3:53:38 PM",
+      "dateFinished": "Oct 4, 2016 3:53:38 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Create PXF External Table to Access HBase Customer Table",
+      "text": "%psql.sql\nDROP EXTERNAL TABLE IF EXISTS hbase.customer;\nCREATE EXTERNAL TABLE hbase.customer\n  ( \n   -- c_customer_sk              bigint    \n    recordkey \t\t\t\t\t integer\n  , \"cf1:c_customer_id\"          text              \n  , \"cf1:c_current_cbigbench_sk\" bigint\n  , \"cf1:c_current_hbigbench_sk\" bigint\n  , \"cf1:c_current_addr_sk\"      bigint\n  , \"cf1:c_first_shipto_date_sk\" bigint\n  , \"cf1:c_first_sales_date_sk\"  bigint\n  , \"cf1:c_salutation\"           text\n  , \"cf1:c_first_name\"           text\n  , \"cf1:c_last_name\"\t\t\t text\n  , \"cf1:c_preferred_cust_flag\"  text\n  , \"cf1:c_birth_day\"            int\n  , \"cf1:c_birth_month\"          int\n  , \"cf1:c_birth_year\"           int\n  , \"cf1:c_birth_country\"        text\n  , \"cf1:c_login\"                text\n  , \"cf1:c_email_address\"        text\n  , \"cf1:c_last_review_date\"     text\n)\nLOCATION (\u0027pxf://pxfdemo-001.c.marketing-dbaskette.internal:51200/customer?Profile\u003dHBase\u0027)\nFORMAT \u0027CUSTOM\u0027 (formatter\u003d\u0027pxfwritable_import\u0027);\n\nDROP  EXTERNAL TABLE IF EXISTS hbase.customer_demographics;\nCREATE EXTERNAL TABLE hbase.customer_demographics\n  ( \n     recordkey                      bigint               \n  , \"cf1:cd_gender\"                 text\n  , \"cf1:cd_marital_status\"         text\n  , \"cf1:cd_education_status\"       text\n  , \"cf1:cd_purchase_estimate\"      text\n  , \"cf1:cd_credit_rating\"          text\n  , \"cf1:cd_dep_count\"              text\n  , \"cf1:cd_dep_employed_count\"     text\n  , \"cf1:cd_dep_college_count\"      text\n  )\nLOCATION (\u0027pxf://pxfdemo-001.c.marketing-dbaskette.internal:51200/customer_demographics?Profile\u003dHBase\u0027)FORMAT \u0027CUSTOM\u0027 (formatter\u003d\u0027pxfwritable_import\u0027);\n\n",
+      "dateUpdated": "Oct 4, 2016 5:40:12 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "Update Count",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "tableHide": true,
+        "title": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475528641610_1199938571",
+      "id": "20161003-210401_177954091",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "Update Count\n0\n"
+      },
+      "dateCreated": "Oct 3, 2016 9:04:01 AM",
+      "dateStarted": "Oct 4, 2016 4:42:47 PM",
+      "dateFinished": "Oct 4, 2016 4:42:48 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "View HBase Customer Table via PXF External Table",
+      "text": "%psql.sql\nselect * from hbase.customer limit 10;\n",
+      "dateUpdated": "Oct 4, 2016 5:39:59 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475528726299_-643854779",
+      "id": "20161003-210526_1843793288",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "recordkey\tcf1:c_customer_id\tcf1:c_current_cbigbench_sk\tcf1:c_current_hbigbench_sk\tcf1:c_current_addr_sk\tcf1:c_first_shipto_date_sk\tcf1:c_first_sales_date_sk\tcf1:c_salutation\tcf1:c_first_name\tcf1:c_last_name\tcf1:c_preferred_cust_flag\tcf1:c_birth_day\tcf1:c_birth_month\tcf1:c_birth_year\tcf1:c_birth_country\tcf1:c_login\tcf1:c_email_address\tcf1:c_last_review_date\n0\tAAAAAAAAAAAAAAAA\t1824793\t3203\t8082\t28776\t14690\tMs.\tMarisa\tHarrington\tN\t17\t4\t1988\tUNITED ARAB EMIRATES\tRRCyuY3XfE3a\tMarisa.Harrington@lawyer.com\tgdMmGdU9\n1\tAAAAAAAAAAAAAAAB\t830976\t2600\t29067\t94658\t19931\tMiss\tBessie\tCalderon\tN\t20\t10\t1945\tMONACO\taCJb9cc\tBessie.Calderon@snail-mail.net\thLQn0LtVa\n10\tAAAAAAAAAAAAAAAK\t890454\t5535\t110514\t78774\t102861\tSir\tGeorge\tAnderson\tN\t14\t3\t1968\tTUNISIA\tSa\tGeorge.Anderson@snail-mail.net\t46\n100\tAAAAAAAAAAAAAADW\t455495\t1650\t116837\t34656\t32209\tSir\tMichael\tWinstead\tY\t14\t5\t1935\tPITCAIRN\th6W4ldJqMO\tMichael.Winstead@consultant.com\tccRVfnw\n1000\tAAAAAAAAAAAAABMM\t1547715\t2765\t1046\t27210\t16686\tMs.\tSuzette\tDavis\tY\t1\t4\t1949\tGUAM\t1sTdha20QFE\tSuzette.Davis@lawyer.com\tNuNT\n10000\tAAAAAAAAAAAAAOUQ\t621082\t3822\t9554\t22907\t66301\tDr.\tMelissa\tDiehl\tN\t19\t11\t1947\tBANGLADESH\tD9djf9uR6\tMelissa.Diehl@devils.com\tuDOmWYF\n100000\tAAAAAAAAAAAAFRYE\t1803159\t6426\t127207\t58325\t44664\tDr.\tBobby\tJones\tY\t28\t10\t1977\tBARBADOS\t74\tBobby.Jones@hushmail.me\teSfdj\n100001\tAAAAAAAAAAAAFRYF\t1901326\t3717\t68509\t44092\t83052\tSir\tShawn\tNeal\tN\t17\t5\t1980\tANGOLA\tfLkuC\tShawn.Neal@devils.com\tOgY\n100002\tAAAAAAAAAAAAFRYG\t1885776\t5804\t126206\t85260\t75676\tMiss\tBenita\tPeters\tY\t24\t6\t1989\tCROATIA\tlvkaPgEst\tBenita.Peters@gmx.pt\tGfp6Jx\n100003\tAAAAAAAAAAAAFRYH\t1655164\t1013\t151172\t83341\t38730\tDr.\tBenjamin\tYates\tY\t15\t3\t1970\tNAURU\tQpQjQsB\tBenjamin.Yates@gmail.com\teeKn\n"
+      },
+      "dateCreated": "Oct 3, 2016 9:05:26 AM",
+      "dateStarted": "Oct 4, 2016 3:58:02 PM",
+      "dateFinished": "Oct 4, 2016 3:58:03 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Query HBase Table for Customer 107596 Using PXF External Table",
+      "text": "%psql.sql\n\nselect * from hbase.customer where recordkey\u003d\u0027107596\u0027",
+      "dateUpdated": "Oct 4, 2016 5:39:27 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "recordkey",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "cf1:c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "recordkey",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "cf1:c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475595858855_198565169",
+      "id": "20161004-154418_157026140",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "recordkey\tcf1:c_customer_id\tcf1:c_current_cbigbench_sk\tcf1:c_current_hbigbench_sk\tcf1:c_current_addr_sk\tcf1:c_first_shipto_date_sk\tcf1:c_first_sales_date_sk\tcf1:c_salutation\tcf1:c_first_name\tcf1:c_last_name\tcf1:c_preferred_cust_flag\tcf1:c_birth_day\tcf1:c_birth_month\tcf1:c_birth_year\tcf1:c_birth_country\tcf1:c_login\tcf1:c_email_address\tcf1:c_last_review_date\n107596\tAAAAAAAAAAAAGDEI\t282951\t447\t23970\t26694\t101378\tDr.\tDennis\tCoe\tN\t1\t7\t1991\tMADAGASCAR\tlV1dHCz93U\tDennis.Coe@devils.com\tzKidT8\n"
+      },
+      "dateCreated": "Oct 4, 2016 3:44:18 PM",
+      "dateStarted": "Oct 4, 2016 4:02:19 PM",
+      "dateFinished": "Oct 4, 2016 4:02:21 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "View HBase Customer Demographics Table",
+      "text": "%hbase \n\nscan \u0027customer_demographics\u0027, {LIMIT\u003d\u003e10}",
+      "dateUpdated": "Oct 4, 2016 5:38:34 PM",
+      "config": {
+        "colWidth": 5.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475595855483_-1939099720",
+      "id": "20161004-154415_427563443",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "ROW  COLUMN+CELL\n 0 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 0 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d0\n 0 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d0\n 0 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d5\n 0 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dPrimary\n 0 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 0 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dU\n 0 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d6000\n 1 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 1 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d4\n 1 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d0\n 1 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d0\n 1 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dPrimary\n 1 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dM\n 1 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dS\n 1 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d3500\n 10 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 10 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d6\n 10 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d2\n 10 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d3\n 10 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003d2 yr Degree\n 10 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dM\n 10 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dM\n 10 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d500\n 100 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 100 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d1\n 100 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d7\n 100 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d7\n 100 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dAdvanced Degree\n 100 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 100 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dU\n 100 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d1000\n 1000 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 1000 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d0\n 1000 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d1\n 1000 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d5\n 1000 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dUnknown\n 1000 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dM\n 1000 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dU\n 1000 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d1000\n 10000 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dLow Risk\n 10000 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d3\n 10000 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d0\n 10000 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d3\n 10000 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dSecondary\n 10000 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 10000 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dM\n 10000 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d2500\n 100000 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 100000 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d5\n 100000 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d1\n 100000 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d3\n 100000 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dAdvanced Degree\n 100000 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 100000 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dS\n 100000 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d1500\n 1000000 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 1000000 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d1\n 1000000 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d1\n 1000000 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d0\n 1000000 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003d4 yr Degree\n 1000000 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 1000000 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dS\n 1000000 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d3500\n 1000001 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dLow Risk\n 1000001 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d4\n 1000001 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d7\n 1000001 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d3\n 1000001 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003dCollege\n 1000001 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 1000001 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dM\n 1000001 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d2000\n 1000002 column\u003dcf1:cd_credit_rating, timestamp\u003d1475599747227, value\u003dGood\n 1000002 column\u003dcf1:cd_dep_college_count, timestamp\u003d1475599747227, value\u003d0\n 1000002 column\u003dcf1:cd_dep_count, timestamp\u003d1475599747227, value\u003d8\n 1000002 column\u003dcf1:cd_dep_employed_count, timestamp\u003d1475599747227, value\u003d9\n 1000002 column\u003dcf1:cd_education_status, timestamp\u003d1475599747227, value\u003d2 yr Degree\n 1000002 column\u003dcf1:cd_gender, timestamp\u003d1475599747227, value\u003dF\n 1000002 column\u003dcf1:cd_marital_status, timestamp\u003d1475599747227, value\u003dS\n 1000002 column\u003dcf1:cd_purchase_estimate, timestamp\u003d1475599747227, value\u003d6500\n10 row(s) in 0.0490 seconds\n\n"
+      },
+      "dateCreated": "Oct 4, 2016 3:44:15 PM",
+      "dateStarted": "Oct 4, 2016 4:51:40 PM",
+      "dateFinished": "Oct 4, 2016 4:51:40 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "View HBase Customer Demographics via PXF External Table",
+      "text": "%psql.sql\n\nselect * from hbase.customer_demographics limit 10;",
+      "dateUpdated": "Oct 4, 2016 5:39:03 PM",
+      "config": {
+        "colWidth": 6.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "recordkey",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "cf1:cd_gender",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "recordkey",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "cf1:cd_gender",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475599925209_-1591462979",
+      "id": "20161004-165205_964406568",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "recordkey\tcf1:cd_gender\tcf1:cd_marital_status\tcf1:cd_education_status\tcf1:cd_purchase_estimate\tcf1:cd_credit_rating\tcf1:cd_dep_count\tcf1:cd_dep_employed_count\tcf1:cd_dep_college_count\n0\tF\tU\tPrimary\t6000\tGood\t0\t5\t0\n1\tM\tS\tPrimary\t3500\tGood\t0\t0\t4\n10\tM\tM\t2 yr Degree\t500\tGood\t2\t3\t6\n100\tF\tU\tAdvanced Degree\t1000\tGood\t7\t7\t1\n1000\tM\tU\tUnknown\t1000\tGood\t1\t5\t0\n10000\tF\tM\tSecondary\t2500\tLow Risk\t0\t3\t3\n100000\tF\tS\tAdvanced Degree\t1500\tGood\t1\t3\t5\n1000000\tF\tS\t4 yr Degree\t3500\tGood\t1\t0\t1\n1000001\tF\tM\tCollege\t2000\tLow Risk\t7\t3\t4\n1000002\tF\tS\t2 yr Degree\t6500\tGood\t8\t9\t0\n"
+      },
+      "dateCreated": "Oct 4, 2016 4:52:05 PM",
+      "dateStarted": "Oct 4, 2016 5:26:53 PM",
+      "dateFinished": "Oct 4, 2016 5:26:54 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "print(\"%html \u003ch3\u003e\u003ccenter\u003ePutting it All Together\u003c/h3\u003e\")\nprint(\"\u003ch4\u003e\u003ccenter\u003eAll Table types can be used in a typical SQL JOIN\u003c/h4\u003e\")\nprint(\"\u003ccenter\u003e\u003cimg src\u003d\u0027https://cwiki.apache.org/confluence/download/attachments/61318291/logo-hawq.png\u0027  style\u003d\u0027width: 400px;\u0027/\u003e\")",
+      "dateUpdated": "Oct 4, 2016 5:44:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475602222701_49585193",
+      "id": "20161004-173022_1422006428",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch3\u003e\u003ccenter\u003ePutting it All Together\u003c/h3\u003e\u003ch4\u003e\u003ccenter\u003eAll Table types can be used in a typical SQL JOIN\u003c/h4\u003e\u003ccenter\u003e\u003cimg src\u003d\u0027https://cwiki.apache.org/confluence/download/attachments/61318291/logo-hawq.png\u0027  style\u003d\u0027width: 400px;\u0027/\u003e"
+      },
+      "dateCreated": "Oct 4, 2016 5:30:22 PM",
+      "dateStarted": "Oct 4, 2016 5:43:58 PM",
+      "dateFinished": "Oct 4, 2016 5:43:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "SQL Join with a HAWQ Table +  HCatalog Table + HBase Table",
+      "text": "%psql.sql\nselect c.c_first_name,c.c_last_name,ca.ca_city,ca.ca_state,cd.\"cf1:cd_gender\",cd.\"cf1:cd_marital_status\" from hawq.customer c, hcatalog.bigbench.customer_address ca, hbase.customer_demographics cd where c.c_customer_sk\u003dcd.recordKey and c.c_customer_sk\u003dca.ca_address_sk limit 10;\n",
+      "dateUpdated": "Oct 4, 2016 5:31:42 PM",
+      "config": {
+        "colWidth": 11.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "c_customer_sk",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "c_customer_sk",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "c_customer_id",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "title": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475599836489_-1250114084",
+      "id": "20161004-165036_470967800",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "c_first_name\tc_last_name\tca_city\tca_state\tcf1:cd_gender\tcf1:cd_marital_status\nShari\tPayne\tAvon\tMT\tF\tD\nBenjamin\tWarren\tPetersburg\tVT\tF\tW\nWendi\tTyler\tFolsom\tAR\tM\tM\nFlorence\tTurner\tRichland\tOK\tF\tU\nJoseph\tMccallum\tArnold\tAR\tM\tM\nAntonio\tReynolds\tSaint George\tNC\tM\tS\nPeter\tGray\tSpencer\tTX\tM\tS\nJane\tJones\tWest Point\tOK\tM\tM\nDianna\tBrown\tWesley\tTX\tF\tW\nTheodora\tHerrmann\tHarmony\tNC\tF\tW\n"
+      },
+      "dateCreated": "Oct 4, 2016 4:50:36 PM",
+      "dateStarted": "Oct 4, 2016 5:31:42 PM",
+      "dateFinished": "Oct 4, 2016 5:31:44 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "dateUpdated": "Oct 4, 2016 5:43:20 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1475602989802_1471891842",
+      "id": "20161004-174309_195555188",
+      "dateCreated": "Oct 4, 2016 5:43:09 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "PXF Demonstration",
+  "id": "2BW7K83GQ",
+  "angularObjects": {
+    "2BZK8TFRU:shared_process": [],
+    "2BZ3RNP5J:shared_process": [],
+    "2BWY34VVC:shared_process": [],
+    "2BWJHVDKJ:shared_process": [],
+    "2BWQ95CFP:shared_process": [],
+    "2BY6DBM2G:shared_process": [],
+    "2BWTKA8KX:shared_process": [],
+    "2BWHDHPH9:shared_process": [],
+    "2BXDDWG7C:shared_process": [],
+    "2BY2YMYSS:shared_process": [],
+    "2BZZTCJH8:shared_process": [],
+    "2BXE27NYA:shared_process": [],
+    "2BY4CWJPJ:shared_process": [],
+    "2BZPCPG31:shared_process": [],
+    "2BWQPBDTR:shared_process": [],
+    "2BWBP1V6P:shared_process": [],
+    "2BWU6BQGC:shared_process": [],
+    "2BZP4Y5P8:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
