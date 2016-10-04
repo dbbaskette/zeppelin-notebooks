@@ -1119,7 +1119,7 @@
     },
     {
       "text": "",
-      "dateUpdated": "Oct 4, 2016 9:22:03 PM",
+      "dateUpdated": "Oct 4, 2016 9:39:59 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -1131,15 +1131,16 @@
           "groups": [],
           "scatter": {}
         },
-        "enabled": true
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
       },
       "settings": {
         "params": {},
         "forms": {}
       },
-      "jobName": "paragraph_1475616113431_834804248",
-      "id": "20161004-212153_116113710",
-      "dateCreated": "Oct 4, 2016 9:21:53 PM",
+      "jobName": "paragraph_1475617189445_1098477072",
+      "id": "20161004-213949_1659251066",
+      "dateCreated": "Oct 4, 2016 9:39:49 PM",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
